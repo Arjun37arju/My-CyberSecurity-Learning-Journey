@@ -213,6 +213,93 @@ Examples:
 
 ---
 
+
+
+# Security Objectives and CIA Triad
+
+## A. Confidentiality
+
+**Definition:**
+Confidentiality ensures that sensitive information is accessible only to authorized users and is protected from unauthorized access.
+
+**How it is achieved:**
+- Passwords
+- Multi-Factor Authentication (MFA)
+- Encryption
+- Access Control
+- Biometric Authentication
+
+**Example:**
+Only you can access your Gmail account using your password and OTP.
+
+---
+
+## B. Integrity
+
+**Definition:**
+Integrity ensures that data remains accurate, complete, and is modified only by authorized users.
+
+**How it is achieved:**
+- Hashing
+- Digital Signatures
+- Checksums
+- Access Permissions
+- Version Control
+
+**Example:**
+When you transfer ₹5,000 through online banking, the amount should not be changed during the transaction.
+
+---
+
+## C. Availability
+
+**Definition:**
+Availability ensures that systems, applications, and data are accessible whenever authorized users need them.
+
+**How it is achieved:**
+- Regular Backups
+- Redundant Servers
+- UPS (Backup Power)
+- Disaster Recovery
+- Load Balancing
+
+**Example:**
+An ATM should be available 24/7 so customers can withdraw money whenever they need it.
+
+---
+
+## D. Real-World Example (ATM Banking System)
+
+The ATM banking system is a great example of the CIA Triad.
+
+### Confidentiality
+Only the account owner can access the account using an ATM card and PIN.
+
+### Integrity
+The bank balance and transaction records remain accurate and cannot be altered by unauthorized users.
+
+### Availability
+The ATM and banking network should be available whenever customers need to withdraw cash.
+
+---
+
+## E. Security Objectives
+
+Security objectives are the goals of protecting information and systems from unauthorized access, modification, or disruption. The primary security objectives are represented by the **CIA Triad**.
+
+### Objectives
+- **Confidentiality** – Protect sensitive information from unauthorized access.
+- **Integrity** – Ensure data remains accurate and trustworthy.
+- **Availability** – Ensure systems and data are accessible when needed.
+
+### Why Security Objectives are Important
+- Protect sensitive information
+- Prevent unauthorized access
+- Maintain data accuracy
+- Ensure continuous business operations
+- Build trust with users and customers
+- Reduce the risk of cyber attacks
+
 # Summary
 
 Cybersecurity is essential for protecting digital systems, networks, applications, and sensitive information from cyber threats. Understanding cybersecurity fundamentals, security domains, and modern attack techniques provides a strong foundation for learning advanced cybersecurity concepts.
