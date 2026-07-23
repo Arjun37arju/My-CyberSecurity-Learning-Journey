@@ -303,3 +303,118 @@ Security objectives are the goals of protecting information and systems from una
 # Summary
 
 Cybersecurity is essential for protecting digital systems, networks, applications, and sensitive information from cyber threats. Understanding cybersecurity fundamentals, security domains, and modern attack techniques provides a strong foundation for learning advanced cybersecurity concepts.
+
+# Cybersecurity Basics
+
+This document explains five fundamental cybersecurity concepts: **Threat, Vulnerability, Risk, Exploit, and Attack Vector**.
+
+---
+
+## 1. Threat
+
+### Definition
+A **threat** is any potential danger that can exploit a vulnerability to harm a system, network, application, or data.
+
+### Examples
+- Hacker
+- Malware
+- Ransomware
+- Insider attack
+- Natural disasters
+
+---
+
+## 2. Vulnerability
+
+### Definition
+A **vulnerability** is a weakness or flaw in a system, application, network, or device that attackers can exploit.
+
+### Examples
+- Weak passwords
+- Outdated software
+- SQL Injection (SQLi)
+- Cross-Site Scripting (XSS)
+- Security misconfiguration
+
+---
+
+## 3. Risk
+
+### Definition
+A **risk** is the possibility that a threat will exploit a vulnerability and cause damage, data loss, or financial loss.
+
+### Examples
+- Data breach
+- Financial loss
+- Service disruption
+- Reputation damage
+
+---
+
+## 4. Exploit
+
+### Definition
+An **exploit** is a tool, code, or technique used to take advantage of a vulnerability.
+
+### Examples
+- SQL Injection exploit
+- Buffer Overflow exploit
+- Remote Code Execution (RCE) exploit
+- Zero-day exploit
+
+---
+
+## 5. Attack Vector
+
+### Definition
+An **attack vector** is the method or path an attacker uses to gain unauthorized access to a system.
+
+### Examples
+- Phishing email
+- Malicious website
+- USB device
+- Open ports
+- Weak passwords
+- Remote Desktop Protocol (RDP)
+
+---
+
+# Relationship Between Them
+
+```
+Threat
+   │
+   ▼
+Finds a Vulnerability
+   │
+   ▼
+Uses an Exploit
+   │
+   ▼
+Through an Attack Vector
+   │
+   ▼
+Creates a Risk
+```
+
+---
+
+# Quick Comparison
+
+| Term | Meaning |
+|------|---------|
+| **Threat** | Potential danger that can cause harm. |
+| **Vulnerability** | Weakness in a system. |
+| **Risk** | Chance that a threat exploits a vulnerability. |
+| **Exploit** | Tool or technique used to attack a vulnerability. |
+| **Attack Vector** | Path or method used to launch an attack. |
+
+---
+
+# Real-World Example
+
+- **Threat:** Hacker
+- **Vulnerability:** Weak password
+- **Exploit:** Password brute-force attack
+- **Attack Vector:** Login page
+- **Risk:** Unauthorized access and data theft
