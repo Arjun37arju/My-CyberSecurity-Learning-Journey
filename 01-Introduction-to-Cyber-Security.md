@@ -418,3 +418,67 @@ Creates a Risk
 - **Exploit:** Password brute-force attack
 - **Attack Vector:** Login page
 - **Risk:** Unauthorized access and data theft
+
+
+
+# Types of Attackers
+
+## A. Script Kiddies
+
+**Definition:**  
+Script kiddies are inexperienced attackers who use ready-made hacking tools or scripts created by others instead of developing their own.
+
+**Example:**  
+A student downloads a password-cracking tool from the internet and tries to hack a friend's Wi-Fi without understanding how the tool works.
+
+---
+
+## B. Cyber Criminals
+
+**Definition:**  
+Cyber criminals are attackers who commit cybercrimes for financial gain by stealing money, personal information, or valuable data.
+
+**Example:**  
+A hacker sends fake bank emails (phishing) to steal users' login credentials and transfer money.
+
+---
+
+## C. Insider Threat
+
+**Definition:**  
+An insider threat is a trusted employee, contractor, or partner who intentionally or accidentally causes harm to an organization's systems or data.
+
+**Example:**  
+An employee copies confidential customer information and shares it with a competitor.
+
+---
+
+## D. Hacktivists
+
+**Definition:**  
+Hacktivists are attackers who hack systems to promote political, social, or ideological causes.
+
+**Example:**  
+A group hacks a government website and replaces the homepage with a protest message.
+
+---
+
+## E. Nation-State Actors
+
+**Definition:**  
+Nation-state actors are highly skilled hackers supported or sponsored by a government to conduct cyber espionage, sabotage, or cyber warfare.
+
+**Example:**  
+A government-backed hacking group targets another country's military or power grid to steal sensitive information.
+
+---
+
+# Interview Summary
+
+| Attacker Type | Simple Definition |
+|---------------|-------------------|
+| Script Kiddies | Inexperienced hackers who use ready-made tools. |
+| Cyber Criminals | Attackers who hack for financial gain. |
+| Insider Threat | Trusted insiders who intentionally or accidentally cause harm. |
+| Hacktivists | Hackers motivated by political or social causes. |
+| Nation-State Actors | Government-backed hackers involved in espionage or cyber warfare. |
