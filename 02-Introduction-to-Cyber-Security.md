@@ -182,7 +182,155 @@ Understanding security research requires knowing where to find trusted informati
 - **Sources**:
   - [MITRE CVE](https://cve.mitre.org)
   - [NVD (National Vulnerability Database)](https://nvd.nist.gov)
-- **Extra Detail**: Each CVE entry includes severity scores (CVSS), affected products, and references to advisories.
+
+ **Extra Details & A Little Deep Understanding**:
+
+#  Understanding CVE, CVSS, CWE, CPE & CAPEC
+
+Cybersecurity professionals use several standardized frameworks and databases to identify, classify, and assess vulnerabilities. Understanding these terms helps analysts prioritize risks, investigate security issues, and communicate effectively across the security community.
+
+---
+
+## 1. CVE (Common Vulnerabilities and Exposures)
+
+A **CVE** is a unique identifier assigned to a publicly disclosed cybersecurity vulnerability. It provides a common reference so that security professionals, vendors, and researchers can discuss the same vulnerability using a standardized ID.
+
+### Why is it useful?
+
+Without CVEs, different vendors might use different names for the same vulnerability. CVEs ensure everyone is referring to the same security issue.
+
+### Example
+
+```
+CVE-2025-12345
+```
+
+When you search for a CVE ID, you can find:
+- A description of the vulnerability
+- Affected products
+- Severity information
+- References and advisories
+- Mitigation or patch details
+
+---
+
+## 2. CVSS (Common Vulnerability Scoring System)
+
+**CVSS** is a standardized scoring system used to measure the severity of a vulnerability. Scores range from **0.0 to 10.0**, helping organizations prioritize which vulnerabilities should be fixed first.
+
+### Severity Ratings
+
+| Score | Severity |
+|--------|----------|
+| 0.0 | None |
+| 0.1 – 3.9 | Low |
+| 4.0 – 6.9 | Medium |
+| 7.0 – 8.9 | High |
+| 9.0 – 10.0 | Critical |
+
+### Why is it useful?
+
+Organizations use CVSS scores to prioritize patching and remediation efforts.
+
+### Example
+
+A vulnerability with a **CVSS score of 9.8** is considered **Critical** and should be addressed immediately because it poses a significant security risk.
+
+---
+
+## 3. CWE (Common Weakness Enumeration)
+
+A **CWE** identifies the underlying software weakness or coding mistake that leads to a vulnerability. Unlike CVEs, which identify specific vulnerabilities, CWEs describe the root cause.
+
+### Why is it useful?
+
+Developers and security teams use CWE to understand how vulnerabilities occur and how to write more secure code.
+
+### Common Examples
+
+| CWE ID | Weakness |
+|---------|-----------|
+| CWE-79 | Cross-Site Scripting (XSS) |
+| CWE-89 | SQL Injection |
+| CWE-787 | Out-of-Bounds Write |
+| CWE-22 | Path Traversal |
+
+---
+
+## 4. CPE (Common Platform Enumeration)
+
+A **CPE** is a standardized naming format used to identify software, hardware, and operating systems affected by vulnerabilities.
+
+### Why is it useful?
+
+Security scanners, vulnerability management tools, and asset inventories use CPE names to accurately identify affected products.
+
+### Example
+
+Products such as:
+- Microsoft Windows 11
+- Ubuntu Linux
+- Apache HTTP Server
+
+Each has its own unique CPE identifier that tools use for vulnerability matching.
+
+---
+
+## 5. CAPEC (Common Attack Pattern Enumeration and Classification)
+
+**CAPEC** is a catalog of common attack patterns used by attackers to exploit weaknesses and vulnerabilities.
+
+### Why is it useful?
+
+CAPEC helps security professionals understand **how** attackers exploit vulnerabilities and assists in developing detection and prevention strategies.
+
+### Example
+
+An attacker exploiting an SQL Injection vulnerability follows an attack pattern documented in CAPEC, describing:
+- Attack prerequisites
+- Attack steps
+- Expected impact
+- Possible defenses
+
+---
+
+# How They Work Together
+
+These standards are connected throughout the vulnerability management process.
+
+```
+Software Weakness (CWE)
+          ↓
+Creates a Vulnerability (CVE)
+          ↓
+Affects a Product (CPE)
+          ↓
+Exploited using an Attack Pattern (CAPEC)
+          ↓
+Severity measured using CVSS
+```
+
+### Real-World Example
+
+A web application contains an **SQL Injection** coding flaw.
+
+- **CWE-89** identifies the coding weakness (SQL Injection).
+- The weakness is assigned a **CVE** after it is publicly disclosed.
+- The affected application is identified using a **CPE**.
+- Attackers exploit the vulnerability using the **CAPEC SQL Injection** attack pattern.
+- The vulnerability receives a **CVSS score of 9.8 (Critical)**, indicating it should be patched immediately.
+
+---
+
+# Quick Summary
+
+| Term | Full Form | Purpose |
+|------|-----------|---------|
+| **CVE** | Common Vulnerabilities and Exposures | Identifies a specific publicly disclosed vulnerability. |
+| **CVSS** | Common Vulnerability Scoring System | Measures the severity of a vulnerability (0.0–10.0). |
+| **CWE** | Common Weakness Enumeration | Identifies the underlying software weakness or coding error. |
+| **CPE** | Common Platform Enumeration | Identifies affected software, hardware, and operating systems. |
+| **CAPEC** | Common Attack Pattern Enumeration and Classification | Describes how attackers exploit weaknesses and vulnerabilities. |
 
 ---
 
