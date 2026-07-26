@@ -161,9 +161,6 @@ This topic helped me understand how cybersecurity professionals build safe testi
 
 
 
-
-
-
 # Security Research Fundamentals
 
 Understanding security research requires knowing where to find trusted information, how to handle vulnerabilities responsibly, and how to keep learning continuously. This document covers the essentials.
@@ -201,4 +198,45 @@ Understanding security research requires knowing where to find trusted informati
 ---
 
 ## 🤝 Responsible Disclosure
-- **Meaning**: Reporting
+- **Meaning**: Reporting vulnerabilities ethically to vendors before making them public.
+- **Extra Detail**: Many companies run **bug bounty programs** (Google, Microsoft, HackerOne, Bugcrowd) to reward responsible disclosure.
+
+---
+
+## 📖 Continuous Learning
+- **Why**: Cybersecurity evolves daily; yesterday’s safe system may be vulnerable today.
+- **Methods**:
+  - Follow blogs, advisories, CVE feeds.
+  - Join communities (Reddit r/netsec, OWASP, Bugcrowd forums).
+  - Practice in labs (CTFs, HackTheBox, TryHackMe).
+  - Document findings in GitHub repos.
+
+---
+
+## 🌐 Additional Research Websites
+- [Exploit Database](https://www.exploit-db.com)  
+- [SecurityFocus](https://www.securityfocus.com)  
+- [Packet Storm Security](https://packetstormsecurity.com)  
+- [OWASP](https://owasp.org)  
+- [CISA Vulnerability Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)  
+- [Zero Day Initiative (ZDI)](https://www.zerodayinitiative.com)  
+
+---
+
+## ✅ Example Workflow for a Student Researcher
+1. Read a **security blog** about a new exploit.  
+2. Check the **CVE database** entry for technical details.  
+3. Review the **vendor advisory** for patch instructions.  
+4. If you discover something new, follow **responsible disclosure**.  
+5. Keep learning by testing in your **isolated lab** and updating your notes.  
+
+---
+
+## 🧠 Easy Way to Remember
+- **Security Blogs** → Learn about new cyber threats.  
+- **CVE Database** → List of known vulnerabilities with unique IDs.  
+- **Security Advisories** → Official warnings and security updates.  
+- **Responsible Disclosure** → Report vulnerabilities privately before making them public.  
+- **Continuous Learning** → Keep learning because cybersecurity never stops changing.  
+
+---
