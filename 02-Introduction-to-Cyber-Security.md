@@ -76,6 +76,9 @@ A company receives intelligence about a new ransomware campaign and blocks relat
 - **Red
 
 
+
+
+
 # Understand Security Lab Setup
 
 ## What I Learned
@@ -155,6 +158,9 @@ Scanning my own Windows VM with Nmap is legal because I own the lab. Scanning so
 # Conclusion
 
 This topic helped me understand how cybersecurity professionals build safe testing environments using virtualization, virtual machines, isolation, and snapshots. A proper lab allows me to practice security testing without risking my personal computer or other systems.
+
+
+
 
 
 
