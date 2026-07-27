@@ -143,3 +143,194 @@ macOS is Apple's operating system for Mac computers. It provides excellent perfo
 # Conclusion
 
 An **Operating System (OS)** is the foundation of every computer. It manages hardware, software, memory, files, and devices while providing a secure environment for users. Security features such as **access control**, **user management**, **authentication**, **file permissions**, **firewalls**, **encryption**, and **regular updates** help protect systems from cyber threats. Understanding Windows, Linux, and macOS is an essential first step for anyone interested in IT or cybersecurity.
+
+
+
+# 💻 Learn Computer Fundamentals
+
+## Introduction
+
+A **computer** is an electronic device that accepts data as input, processes it according to instructions, stores it, and produces meaningful output. Computers are used in education, business, healthcare, entertainment, and cybersecurity.
+
+---
+
+# Basic Computer Components
+
+## 1. Central Processing Unit (CPU)
+
+The **Central Processing Unit (CPU)** is known as the **brain of the computer**. It performs calculations, processes instructions, and controls all operations of the computer.
+
+### Functions of the CPU
+- Executes program instructions
+- Performs arithmetic and logical operations
+- Controls communication between hardware components
+- Processes data quickly
+
+**Example:** When you open a web browser, the CPU processes the instructions required to launch the application.
+
+---
+
+## 2. Memory (RAM)
+
+**Memory**, also called **Random Access Memory (RAM)**, is temporary storage used while the computer is running.
+
+### Functions of RAM
+- Stores data currently being used
+- Allows multiple applications to run simultaneously
+- Improves system performance
+
+**Example:** When you edit a document, it is temporarily stored in RAM until you save it.
+
+> **Note:** RAM is **volatile memory**, meaning its contents are erased when the computer is turned off.
+
+---
+
+## 3. Storage
+
+**Storage** is where data is saved permanently, even after the computer is powered off.
+
+### Types of Storage
+- Hard Disk Drive (HDD)
+- Solid State Drive (SSD)
+- USB Flash Drive
+- Memory Card
+
+### Functions of Storage
+- Stores operating systems
+- Stores applications
+- Stores documents, photos, videos, and other files
+
+**Example:** Your photos and videos remain on your SSD even after restarting your computer.
+
+---
+
+# Hardware and Software
+
+## What is Hardware?
+
+**Hardware** refers to the physical components of a computer that you can see and touch.
+
+### Examples
+- CPU
+- Monitor
+- Keyboard
+- Mouse
+- Motherboard
+- RAM
+- Hard Drive
+- Printer
+
+---
+
+## What is Software?
+
+**Software** is a collection of programs and instructions that tell the hardware what to do.
+
+### Types of Software
+
+### System Software
+System software manages the computer and hardware.
+
+**Examples:**
+- Windows
+- Linux
+- macOS
+
+### Application Software
+Application software helps users perform specific tasks.
+
+**Examples:**
+- Google Chrome
+- Microsoft Word
+- VLC Media Player
+- Visual Studio Code
+
+---
+
+# Hardware vs Software
+
+| Hardware | Software |
+|----------|----------|
+| Physical components | Programs and applications |
+| Can be touched | Cannot be touched |
+| Manufactured | Developed using programming |
+| Example: Keyboard | Example: Microsoft Word |
+
+---
+
+# Binary Data
+
+Computers understand only **binary language**, which consists of two digits:
+
+- **0**
+- **1**
+
+These digits are called **bits (Binary Digits)**.
+
+### Why Binary?
+
+Electronic circuits have only two states:
+- OFF = 0
+- ON = 1
+
+Because of this, computers use binary to represent and process all data.
+
+---
+
+# Bits and Bytes
+
+| Unit | Description |
+|------|-------------|
+| 1 Bit | Single binary digit (0 or 1) |
+| 8 Bits | 1 Byte |
+| 1024 Bytes | 1 KB |
+| 1024 KB | 1 MB |
+| 1024 MB | 1 GB |
+| 1024 GB | 1 TB |
+
+---
+
+# How Computers Store Information
+
+Everything inside a computer is stored as binary data.
+
+Examples:
+- Text
+- Images
+- Audio
+- Videos
+- Applications
+
+### Example
+
+The letter **A** is stored as:
+
+```
+01000001
+```
+
+This binary value represents the character according to the ASCII encoding standard.
+
+Similarly:
+- Photos are stored as binary image data.
+- Music is stored as binary audio data.
+- Videos are stored as binary multimedia data.
+
+The operating system reads this binary information and displays it in a form humans can understand.
+
+---
+
+# Real-Life Example
+
+Imagine writing a document in Microsoft Word.
+
+1. You type text using the keyboard.
+2. The CPU processes your input.
+3. RAM temporarily stores the data.
+4. When you click **Save**, the document is permanently stored on the SSD or HDD as binary data.
+
+---
+
+# Conclusion
+
+Computer fundamentals are the foundation of all IT fields, including cybersecurity. The **CPU** processes instructions, **RAM** temporarily stores active data, and **storage** keeps data permanently. **Hardware** refers to the physical parts of a computer, while **software** consists of programs that control hardware and perform tasks. Since computers understand only **binary (0s and 1s)**, all information—text, images, videos, and applications—is stored and processed in binary form.
