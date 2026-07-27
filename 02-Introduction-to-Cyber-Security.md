@@ -1,5 +1,36 @@
 # Understand Modern Cyber Security Ecosystem
 
+## Table of Contents
+
+- [Security Operations Center (SOC)](...)
+- [Blue Team](...)
+- [Red Team](...)
+- [Purple Team](...)
+- [Threat Intelligence](...)
+- [Key Differences](...)
+- [Interview Summary](...)
+- [Understand Security Lab Setup](...)
+  - [Virtualization Concepts](...)
+  - [Virtual Machines (VMs)](...)
+  - [Isolated Lab Environments](...)
+  - [Snapshot Management](...)
+  - [Safe Security Testing Practices](...)
+  - [Tools Used](...)
+  - [Conclusion](...)
+- [Security Research Fundamentals](...)
+  - [Security Blogs](...)
+  - [CVE Databases](...)
+  - [Understanding CVE, CVSS, CWE, CPE & CAPEC](...)
+  - [Security Advisories](...)
+  - [Responsible Disclosure](...)
+  - [Continuous Learning](...)
+  - [Additional Research Websites](...)
+  - [Example Workflow for a Student Researcher](...)
+  - [Easy Way to Remember](...)
+
+
+# Understand Modern Cyber Security Ecosystem
+
 ## 1. Security Operations Center (SOC)
 **Definition:**  
 A Security Operations Center (SOC) is a team that continuously monitors, detects, investigates, and responds to cybersecurity threats using security tools and processes.
