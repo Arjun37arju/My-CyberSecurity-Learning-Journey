@@ -1,5 +1,26 @@
 # 🖥️ Understanding Operating Systems (OS)
 
+## Table of Contents
+
+- [What is an Operating System?](#what-is-an-operating-system)
+- [Role of an Operating System](#role-of-an-operating-system)
+  - [1. Process Management](#1-process-management)
+  - [2. Memory Management](#2-memory-management)
+  - [3. File Management](#3-file-management)
+  - [4. Device Management](#4-device-management)
+  - [5. User Interface](#5-user-interface)
+- [Operating Systems and Cybersecurity](#operating-systems-and-cybersecurity)
+- [Common Operating Systems](#common-operating-systems)
+  - [Windows](#windows)
+  - [Linux](#linux)
+  - [macOS](#macos)
+- [Conclusion](#conclusion)
+
+
+
+
+# 🖥️ Understanding Operating Systems (OS)
+
 ## What is an Operating System?
 
 An **Operating System (OS)** is system software that acts as a bridge between the user, computer hardware, and application software. It manages computer resources and allows applications to run efficiently.
