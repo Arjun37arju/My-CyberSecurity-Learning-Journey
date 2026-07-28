@@ -1,5 +1,57 @@
 # Understand Modern Cyber Security Ecosystem
 
+## Table of Contents
+
+- [1. Security Operations Center (SOC)](#1-security-operations-center-soc)
+- [2. Blue Team](#2-blue-team)
+- [3. Red Team](#3-red-team)
+- [4. Purple Team](#4-purple-team)
+- [5. Threat Intelligence](#5-threat-intelligence)
+- [Key Differences](#key-differences)
+- [Interview Summary](#interview-summary)
+
+---
+# Understand Security Lab Setup
+
+## Table of Contents
+
+- [What I Learned](#what-i-learned)
+  - [1. Virtualization Concepts](#1-virtualization-concepts)
+  - [2. Virtual Machines (VMs)](#2-virtual-machines-vms)
+  - [3. Isolated Lab Environments](#3-isolated-lab-environments)
+  - [4. Snapshot Management](#4-snapshot-management)
+  - [5. Safe Security Testing Practices](#5-safe-security-testing-practices)
+- [Tools Used](#tools-used)
+- [Conclusion](#conclusion)
+
+---
+
+# Security Research Fundamentals
+
+## Table of Contents
+
+- [Security Blogs](#-security-blogs)
+- [CVE Databases](#-cve-databases)
+- [Understanding CVE, CVSS, CWE, CPE & CAPEC](#understanding-cve-cvss-cwe-cpe--capec)
+  - [1. CVE](#1-cve-common-vulnerabilities-and-exposures)
+  - [2. CVSS](#2-cvss-common-vulnerability-scoring-system)
+  - [3. CWE](#3-cwe-common-weakness-enumeration)
+  - [4. CPE](#4-cpe-common-platform-enumeration)
+  - [5. CAPEC](#5-capec-common-attack-pattern-enumeration-and-classification)
+  - [How They Work Together](#how-they-work-together)
+  - [Quick Summary](#quick-summary)
+- [Security Advisories](#-security-advisories)
+- [Responsible Disclosure](#-responsible-disclosure)
+- [Continuous Learning](#-continuous-learning)
+- [Additional Research Websites](#-additional-research-websites)
+- [Example Workflow for a Student Researcher](#-example-workflow-for-a-student-researcher)
+- [Easy Way to Remember](#-easy-way-to-remember)
+
+---
+
+
+# Understand Modern Cyber Security Ecosystem
+
 ## 1. Security Operations Center (SOC)
 **Definition:**  
 A Security Operations Center (SOC) is a team that continuously monitors, detects, investigates, and responds to cybersecurity threats using security tools and processes.
