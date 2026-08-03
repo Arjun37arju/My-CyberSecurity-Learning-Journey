@@ -9,6 +9,9 @@
 - [Risk Reduction Strategies](#e-risk-reduction-strategies)
 
 ---
+# 🦠 Understand Malware Fundamentals
+
+
 ## 📚 Table of Contents
 
 1. [What is Malware?](#1-what-is-malware)
@@ -139,7 +142,7 @@ A company regularly updates software, trains employees to identify phishing emai
 
 
 
-# 🦠 Understand Malware Fundamentals
+
 
 **Malware (Malicious Software)** is software designed to harm systems, steal information, gain unauthorized access, disrupt operations, or perform other malicious activities.
 
