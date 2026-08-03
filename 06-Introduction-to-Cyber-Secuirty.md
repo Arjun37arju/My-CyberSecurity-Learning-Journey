@@ -576,53 +576,443 @@ The attacker directly interacts with the target's infrastructure to gather infor
 
 ### Example
 
-Before attacking a company, an attacker researches:
+🔎 Reconnaissance Techniques
+Table of Contents
+1. Subdomain Finding
+2. WHOIS Lookup
+3. Technology Detection
+4. robots.txt Check
+5. DNS Enumeration
+6. Port Scanning
+7. IP Address Information
+8. Certificate Transparency Logs
+9. Search Engine Dorking
+10. Wayback Machine (Archive)
+11. Social Media & Public Information
+12. Email Harvesting
+Conclusion
+1. Subdomain Finding
 
-* Company website
-* Employee names and roles
-* Email addresses
-* Technologies used
-* Publicly exposed services
-* Domain and network information
+Subdomain finding is the process of discovering subdomains associated with a target domain.
 
-This information can later be used to create a more targeted attack.
+Example
+site:example.com
 
-### Prevention
+Search engines can reveal indexed subdomains such as:
 
-Organizations can reduce reconnaissance exposure by:
+learn.example.com
+blog.example.com
+mail.example.com
+Tools & Techniques
+Google search
+Subfinder
+Amass
+Assetfinder
+Why It Is Useful
 
-* Limiting unnecessary public information
-* Protecting sensitive documents
-* Monitoring exposed services
-* Using network security controls
-* Regularly checking their external attack surface
-* Training employees about information sharing
+Subdomains can reveal additional applications, development environments, APIs, or other publicly accessible assets.
 
-**Main Goal of Attackers:**
-Collect enough information to identify weaknesses and plan a more effective attack.
+2. WHOIS Lookup
 
----
+WHOIS lookup provides information about a domain's registration and ownership details.
 
-## How These Techniques Are Connected
+Example
 
-Attackers often combine multiple techniques instead of relying on just one.
+Search for:
 
-A typical attack could look like this:
+example.com
 
-**Reconnaissance → Social Engineering → Phishing → Credential Theft → Unauthorized Access → Malware Delivery**
+using a WHOIS lookup service.
 
-### Example Scenario
+Information You May Find
+Domain registrar
+Registration date
+Expiration date
+Name servers
+Domain status
+Organization information
+Tools
+WHOIS
+Whois.com
+WhoisDomainTools
+Why It Is Useful
 
-1. **Reconnaissance:** The attacker researches a company's employees.
-2. **Social Engineering:** The attacker creates a believable story.
-3. **Phishing:** A fake login message is sent to an employee.
-4. **Credential Attack:** The stolen credentials are used to access an account.
-5. **Malware Delivery:** Malicious software is delivered to the compromised system.
-6. **Further Attack:** The attacker attempts to access additional systems or data.
+WHOIS information can help understand the domain's registration and infrastructure.
 
-This shows why cybersecurity requires **multiple layers of protection** rather than relying on a single security tool.
+Note: Privacy protection may hide the actual registrant's personal information.
 
----
+3. Technology Detection
+
+Technology detection identifies the technologies and services used by a website.
+
+Tools
+Wappalyzer — Browser extension for detecting web technologies
+BuiltWith — Online technology profiling service
+WhatWeb — Command-line technology fingerprinting tool
+Information You May Find
+Web server
+Programming language
+Framework
+CMS
+JavaScript libraries
+Analytics platforms
+Web technologies
+Example
+
+A website might use:
+
+Web Server: Nginx
+CMS: WordPress
+Framework: React
+Analytics: Google Analytics
+Why It Is Useful
+
+Knowing the technologies in use helps security professionals understand the target's technology stack and identify areas that need security testing.
+
+4. robots.txt Check
+
+The robots.txt file tells search engine crawlers which parts of a website they should or should not crawl.
+
+Example
+https://example.com/robots.txt
+
+A file might contain:
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+What It Can Reveal
+
+It may reveal paths such as:
+
+/admin/
+/private/
+/backup/
+/test/
+Important
+
+robots.txt does not provide security or prevent users from accessing these paths. It is simply a crawler instruction file.
+
+Why It Is Useful
+
+During authorized reconnaissance, it can provide clues about interesting website paths.
+
+5. DNS Enumeration
+
+DNS enumeration involves gathering information from the Domain Name System (DNS) to understand how a domain and its services are configured.
+
+Common DNS Records
+Record	Purpose
+A	Maps a domain to an IPv4 address
+AAAA	Maps a domain to an IPv6 address
+MX	Identifies mail servers
+NS	Identifies authoritative name servers
+TXT	Stores text information such as SPF records
+CNAME	Creates an alias for another domain
+Tools
+dig
+nslookup
+dnsrecon
+dnsenum
+Example
+nslookup example.com
+
+or:
+
+dig example.com
+Why It Is Useful
+
+DNS information can help identify:
+
+IP addresses
+Mail servers
+Name servers
+Subdomains
+Other connected infrastructure
+6. Port Scanning
+
+Port scanning is used to identify open network ports and the services listening on them.
+
+Common Tools
+Nmap
+RustScan
+Masscan
+Example
+
+For an authorized target:
+
+nmap <target-ip>
+
+Service detection:
+
+nmap -sV <target-ip>
+Common Ports
+Port	Common Service
+22	SSH
+25	SMTP
+53	DNS
+80	HTTP
+443	HTTPS
+3389	RDP
+Why It Is Useful
+
+Port scanning helps security professionals understand which network services are exposed and whether unnecessary services are accessible.
+
+7. IP Address Information
+
+An IP address can provide information about the network and organization associated with an internet-facing system.
+
+Useful Information
+ISP
+Autonomous System (AS)
+Approximate geographic location
+Hostname
+Network range
+Organization
+Tools
+ipinfo.io
+ViewDNS
+WHOIS
+Regional Internet Registries
+Example
+Target Domain
+      ↓
+IP Address
+      ↓
+ISP / Organization
+      ↓
+Network Information
+Why It Is Useful
+
+This can help map publicly exposed infrastructure belonging to an organization.
+
+8. Certificate Transparency Logs
+
+Certificate Transparency (CT) logs contain records of publicly issued SSL/TLS certificates.
+
+These certificates can sometimes reveal domain names and subdomains.
+
+Tool
+crt.sh
+
+Search for:
+
+example.com
+Example Information
+
+A certificate might contain:
+
+example.com
+www.example.com
+api.example.com
+mail.example.com
+Why It Is Useful
+
+CT logs can help discover subdomains that may not appear in normal search-engine results.
+
+9. Search Engine Dorking
+
+Search engine dorking uses advanced search operators to find publicly indexed information.
+
+It is also called Google hacking.
+
+Common Operators
+site:
+
+Search within a specific domain.
+
+site:example.com
+
+Find pages containing a specific word:
+
+site:example.com inurl:login
+
+Find specific file types:
+
+site:example.com filetype:pdf
+
+Find pages with a specific title:
+
+site:example.com intitle:"login"
+Why It Is Useful
+
+Security professionals can use search operators to identify publicly exposed information and help organizations discover accidental exposure.
+
+Important: Only investigate information you are authorized to assess. Do not attempt to access restricted information.
+
+10. Wayback Machine (Archive)
+
+The Wayback Machine stores historical snapshots of websites.
+
+Tool
+https://web.archive.org/
+
+Search for:
+
+example.com
+What It Can Reveal
+
+Older versions of websites may show:
+
+Removed pages
+Previous technologies
+Old URLs
+Previous website structure
+Historical content
+Why It Is Useful
+
+Historical information can help security professionals understand how an organization's public-facing infrastructure has changed over time.
+
+11. Social Media & Public Information
+
+Publicly available information from social media and other websites can provide useful information during reconnaissance.
+
+Sources
+LinkedIn
+GitHub
+Company websites
+Public documentation
+Job postings
+Technical blogs
+Information That May Be Found
+Employee names and roles
+Technologies used
+Programming languages
+Projects
+Company structure
+Email naming patterns
+Public repositories
+Example
+
+A company's job posting may mention:
+
+AWS
+Docker
+Kubernetes
+Python
+React
+Linux
+
+This can provide clues about the organization's technology environment.
+
+Why It Is Useful
+
+Security teams can use this information to understand their organization's public exposure and reduce unnecessary information leakage.
+
+12. Email Harvesting
+
+Email harvesting is the process of finding publicly available email addresses associated with a domain or organization.
+
+Tools
+Hunter
+theHarvester
+Search engines
+Public company websites
+Example
+
+A company may publicly expose addresses such as:
+
+info@example.com
+support@example.com
+admin@example.com
+employee@example.com
+Information That May Be Useful
+Public email addresses
+Email naming patterns
+Employee names
+Associated domains
+Why It Is Useful
+
+Security teams can use this information to assess their organization's exposure to phishing and other social-engineering attacks.
+
+🔗 How Reconnaissance Techniques Connect
+
+Reconnaissance is usually performed as a process, rather than using only one technique.
+
+A simplified workflow can look like:
+
+Domain
+   ↓
+Subdomain Discovery
+   ↓
+DNS Enumeration
+   ↓
+IP Address Discovery
+   ↓
+Technology Detection
+   ↓
+Port & Service Discovery
+   ↓
+Public Information Gathering
+   ↓
+Attack Surface Mapping
+
+For example:
+
+example.com
+     ↓
+api.example.com
+     ↓
+IP Address
+     ↓
+Open Ports
+     ↓
+Running Services
+     ↓
+Technology Stack
+
+This helps security professionals build a clearer picture of the organization's attack surface.
+
+🛡️ Defensive Importance of Reconnaissance
+
+Reconnaissance is not only useful for attackers. Defenders and penetration testers also use it to find weaknesses before attackers do.
+
+Organizations should regularly check:
+
+Publicly exposed subdomains
+Unnecessary open ports
+Outdated technologies
+Exposed documents
+Publicly available employee information
+Old website versions
+DNS configuration
+Forgotten or unused assets
+
+The goal is to reduce unnecessary exposure and strengthen the organization's security.
+
+⚠️ Important Note
+
+Reconnaissance should always be performed legally and ethically.
+
+Only scan, enumerate, or test systems that you own or have explicit permission to assess.
+
+For learning, use authorized labs such as:
+
+TryHackMe
+Hack The Box
+PortSwigger Web Security Academy
+OWASP WebGoat
+Conclusion
+
+Reconnaissance is one of the first stages of many cyber attacks. It involves collecting information about a target's domains, subdomains, IP addresses, technologies, services, employees, and publicly available data.
+
+Important reconnaissance techniques include:
+
+Subdomain Finding
+WHOIS Lookup
+Technology Detection
+robots.txt Checking
+DNS Enumeration
+Port Scanning
+IP Information Gathering
+Certificate Transparency
+Search Engine Dorking
+Wayback Machine
+Social Media Research
+Email Harvesting
+
+Understanding these techniques helps cybersecurity professionals discover an organization's attack surface and exposed information so that weaknesses can be fixed before they are exploited.
 
 ## Conclusion
 
