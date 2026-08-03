@@ -23,6 +23,21 @@
 7. [Malware Comparison](#7-malware-comparison)
 8. [Basic Prevention](#8-basic-prevention)
 
+
+# Understand Common Attack Techniques
+
+## Table of Contents
+
+* [Introduction](#introduction)
+* [1. Phishing](#1-phishing)
+* [2. Social Engineering](#2-social-engineering)
+* [3. Credential Attacks](#3-credential-attacks)
+* [4. Malware Delivery](#4-malware-delivery)
+* [5. Reconnaissance Activities](#5-reconnaissance-activities)
+* [How These Techniques Are Connected](#how-these-techniques-are-connected)
+* [Conclusion](#conclusion)
+
+
 # Understand Security Principles
 
 ## a. Defense in Depth
@@ -331,4 +346,295 @@ It may collect:
 * 👁️ Monitor systems for unusual activity.
 
 > **The best protection is a layered approach rather than relying on one security control.**
+
+
+# Understand Common Attack Techniques
+
+---
+
+## Introduction
+
+Cyber attackers use different techniques to gain unauthorized access, steal information, compromise systems, or disrupt organizations.
+
+Some attacks directly target technical weaknesses, while others target **human behavior**. Understanding these common attack techniques helps cybersecurity professionals recognize suspicious activity and apply the right security controls.
+
+The five common techniques covered here are:
+
+* **Phishing**
+* **Social Engineering**
+* **Credential Attacks**
+* **Malware Delivery**
+* **Reconnaissance Activities**
+
+---
+
+## 1. Phishing
+
+**Phishing** is a social engineering attack where an attacker pretends to be a trusted person, company, or service to trick someone into revealing sensitive information or performing an unsafe action.
+
+Attackers commonly use **emails, messages, fake websites, or phone calls** to make the victim believe the request is legitimate.
+
+### Common Examples
+
+* Fake bank login pages
+* Fake password-reset emails
+* Messages pretending to be from a company
+* Fake delivery notifications
+* Emails containing malicious attachments or links
+
+### Example
+
+A user receives an email saying:
+
+> "Your account will be suspended. Click here to verify your account."
+
+The link leads to a fake login page. When the user enters their username and password, the attacker captures the credentials.
+
+### Common Types of Phishing
+
+| Type               | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| **Email Phishing** | Fake emails designed to trick users                          |
+| **Spear Phishing** | Targeted phishing aimed at a specific person or organization |
+| **Whaling**        | Phishing targeting high-level executives                     |
+| **Smishing**       | Phishing through SMS or text messages                        |
+| **Vishing**        | Phishing through voice calls                                 |
+
+### How to Prevent It
+
+* Check the sender and website address carefully
+* Avoid clicking suspicious links
+* Don't open unexpected attachments
+* Use MFA
+* Verify unusual requests through another communication channel
+* Report suspicious messages
+
+**Purpose of the Attack:**
+Usually to steal credentials, financial information, personal data, or deliver malware.
+
+---
+
+## 2. Social Engineering
+
+**Social engineering** is the manipulation of people into revealing information, giving access, or performing an action that benefits an attacker.
+
+Instead of attacking a technical vulnerability directly, the attacker tries to exploit **human trust, fear, curiosity, urgency, or helpfulness**.
+
+### Common Techniques
+
+* **Pretexting:** Creating a believable fake situation to obtain information
+* **Baiting:** Offering something attractive to trick someone into taking an unsafe action
+* **Tailgating:** Following an authorized person into a restricted area
+* **Impersonation:** Pretending to be someone trusted
+* **Quid Pro Quo:** Offering something in exchange for information or access
+
+### Example
+
+An attacker calls an employee and pretends to be an IT support technician:
+
+> "We're fixing a security issue with your account. I need you to confirm your login details."
+
+The employee trusts the attacker and provides sensitive information.
+
+### Why It Works
+
+Attackers often take advantage of:
+
+* Trust
+* Fear
+* Urgency
+* Curiosity
+* Lack of security awareness
+
+### Prevention
+
+* Verify unusual requests
+* Never share passwords or OTPs
+* Follow security procedures
+* Be careful with unexpected calls and messages
+* Provide regular security awareness training
+
+**Main Idea:**
+Social engineering attacks the **person**, rather than directly attacking the computer.
+
+---
+
+## 3. Credential Attacks
+
+**Credential attacks** are attempts to obtain, guess, steal, or misuse usernames, passwords, tokens, or other authentication information.
+
+Once attackers obtain valid credentials, they may be able to access accounts without exploiting a software vulnerability.
+
+### Common Credential Attacks
+
+| Attack                  | Description                                                   |
+| ----------------------- | ------------------------------------------------------------- |
+| **Brute Force**         | Trying many possible passwords until one works                |
+| **Dictionary Attack**   | Trying passwords from a list of common words and passwords    |
+| **Password Spraying**   | Trying a few common passwords against many accounts           |
+| **Credential Stuffing** | Using leaked username/password combinations on other services |
+| **Phishing**            | Tricking users into providing credentials                     |
+| **Keylogging**          | Capturing keystrokes to obtain sensitive information          |
+
+### Example
+
+A user's password is leaked from one website. The attacker tries the same username and password on the user's email and other services.
+
+If the user reused the password, the attacker may gain access to multiple accounts.
+
+### Prevention
+
+* Use strong and unique passwords
+* Enable MFA
+* Avoid password reuse
+* Use a password manager
+* Implement account lockout or rate limiting
+* Monitor unusual login activity
+* Use strong authentication methods
+
+**Main Goal of Attackers:**
+Gain access to accounts by obtaining valid authentication credentials.
+
+---
+
+## 4. Malware Delivery
+
+**Malware delivery** is the process of getting malicious software onto a victim's device.
+
+Malware can be delivered through different methods, often by convincing the victim to open or install something.
+
+### Common Delivery Methods
+
+* Malicious email attachments
+* Fake software downloads
+* Malicious websites
+* Compromised websites
+* USB devices
+* Malicious advertisements
+* Fake software updates
+* Phishing links
+
+### Example
+
+A user receives an email containing an attachment that appears to be an invoice.
+
+The user opens it, and malicious software is installed on the computer.
+
+### Common Types of Malware
+
+* **Virus** – Attaches itself to files and can spread when those files are executed.
+* **Worm** – Can spread automatically across systems or networks.
+* **Trojan** – Pretends to be legitimate software but performs malicious actions.
+* **Ransomware** – Encrypts files or systems and demands payment.
+* **Spyware** – Secretly monitors activity or collects information.
+
+### Prevention
+
+* Keep operating systems and applications updated
+* Use antivirus/endpoint security
+* Avoid unknown downloads
+* Don't open unexpected attachments
+* Download software from trusted sources
+* Use email and web security filters
+* Regularly back up important data
+
+**Main Goal of Attackers:**
+Get malicious software onto a system so they can steal data, damage systems, maintain access, or disrupt operations.
+
+---
+
+## 5. Reconnaissance Activities
+
+**Reconnaissance** is the process of collecting information about a target before attempting an attack.
+
+Attackers use reconnaissance to understand the target's **people, systems, applications, network, technologies, and publicly available information**.
+
+Reconnaissance can be **passive** or **active**.
+
+### Passive Reconnaissance
+
+The attacker collects information without directly interacting with the target's systems.
+
+**Examples:**
+
+* Searching public websites
+* Studying social media
+* Looking at company information
+* Searching public documents
+* Checking publicly available domain information
+
+### Active Reconnaissance
+
+The attacker directly interacts with the target's infrastructure to gather information.
+
+**Examples:**
+
+* Scanning systems
+* Identifying open ports
+* Checking available services
+* Discovering network hosts
+
+### Example
+
+Before attacking a company, an attacker researches:
+
+* Company website
+* Employee names and roles
+* Email addresses
+* Technologies used
+* Publicly exposed services
+* Domain and network information
+
+This information can later be used to create a more targeted attack.
+
+### Prevention
+
+Organizations can reduce reconnaissance exposure by:
+
+* Limiting unnecessary public information
+* Protecting sensitive documents
+* Monitoring exposed services
+* Using network security controls
+* Regularly checking their external attack surface
+* Training employees about information sharing
+
+**Main Goal of Attackers:**
+Collect enough information to identify weaknesses and plan a more effective attack.
+
+---
+
+## How These Techniques Are Connected
+
+Attackers often combine multiple techniques instead of relying on just one.
+
+A typical attack could look like this:
+
+**Reconnaissance → Social Engineering → Phishing → Credential Theft → Unauthorized Access → Malware Delivery**
+
+### Example Scenario
+
+1. **Reconnaissance:** The attacker researches a company's employees.
+2. **Social Engineering:** The attacker creates a believable story.
+3. **Phishing:** A fake login message is sent to an employee.
+4. **Credential Attack:** The stolen credentials are used to access an account.
+5. **Malware Delivery:** Malicious software is delivered to the compromised system.
+6. **Further Attack:** The attacker attempts to access additional systems or data.
+
+This shows why cybersecurity requires **multiple layers of protection** rather than relying on a single security tool.
+
+---
+
+## Conclusion
+
+Understanding common attack techniques is an important part of cybersecurity.
+
+* **Phishing** tricks users into revealing information or taking unsafe actions.
+* **Social engineering** manipulates human behavior.
+* **Credential attacks** target usernames, passwords, and authentication data.
+* **Malware delivery** gets malicious software onto a victim's system.
+* **Reconnaissance** collects information about a target before an attack.
+
+Security professionals need to understand how these techniques work so they can **identify attacks early, reduce risk, protect users, and strengthen systems**.
+
+---
 
