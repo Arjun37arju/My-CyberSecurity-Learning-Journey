@@ -163,15 +163,4 @@ Reconnaissance can be:
 
 > Always perform reconnaissance only on systems you own or have explicit permission to test.
 
-### Subdomain Finding
-
-Subdomain finding is used to discover subdomains connected to a main domain.
-
-For example:
-
-```text
-example.com
-www.example.com
-mail.example.com
-learn.example.com
-dev.example.com
+Understanding common attack techniques is important for cybersecurity professionals.
