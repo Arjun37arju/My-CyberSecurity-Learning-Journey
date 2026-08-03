@@ -27,7 +27,7 @@ The main techniques are **Phishing, Social Engineering, Credential Attacks, Malw
 
 For example, a victim may receive an email saying:
 
-```text
+text
 The link may lead to a fake login page designed to steal the user's username and password.
 Common types of phishing include:
 Email Phishing – Fake emails sent to victims.
