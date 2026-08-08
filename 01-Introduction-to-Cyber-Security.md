@@ -5,6 +5,8 @@
 - [Why is Cybersecurity Important?](#why-is-cybersecurity-important)
   - [Importance of Cybersecurity](#importance-of-cybersecurity)
 - [Information Security vs Cybersecurity](#information-security-vs-cybersecurity)
+
+
 - [Cybersecurity Domains](#cybersecurity-domains)
   - [1. Network Security](#1-network-security)
   - [2. Information Security](#2-information-security)
@@ -14,6 +16,9 @@
   - [6. Identity and Access Management (IAM)](#6-identity-and-access-management-iam)
   - [7. Operational Security (OPSEC)](#7-operational-security-opsec)
   - [8. Disaster Recovery and Business Continuity](#8-disaster-recovery-and-business-continuity)
+
+
+
 - [Modern Threat Landscape](#modern-threat-landscape)
   - [Common Modern Threats](#common-modern-threats)
     - [Phishing](#phishing)
@@ -24,6 +29,8 @@
     - [Insider Threat](#insider-threat)
     - [Zero-Day Attack](#zero-day-attack)
     - [Social Engineering](#social-engineering)
+
+
 - [Security Objectives and CIA Triad](#security-objectives-and-cia-triad)
   - [A. Confidentiality](#a-confidentiality)
   - [B. Integrity](#b-integrity)
@@ -31,6 +38,9 @@
   - [D. Real-World Example (ATM Banking System)](#d-real-world-example-atm-banking-system)
   - [E. Security Objectives](#e-security-objectives)
 - [Summary](#summary)
+
+
+
 - [Cybersecurity Basics](#cybersecurity-basics)
   - [1. Threat](#1-threat)
   - [2. Vulnerability](#2-vulnerability)
@@ -40,6 +50,9 @@
   - [Relationship Between Them](#relationship-between-them)
   - [Quick Comparison](#quick-comparison)
   - [Real-World Example](#real-world-example)
+
+
+
 - [Types of Attackers](#types-of-attackers)
   - [A. Script Kiddies](#a-script-kiddies)
   - [B. Cyber Criminals](#b-cyber-criminals)
