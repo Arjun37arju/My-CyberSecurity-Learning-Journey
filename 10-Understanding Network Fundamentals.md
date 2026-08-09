@@ -2,14 +2,6 @@
 
 1. [Understand Network Fundamentals](#1-understand-network-fundamentals)
 
-   * [a. What is Networking](#a-what-is-networking)
-   * [b. Network Communication](#b-network-communication)
-   * [c. Network Architecture](#c-network-architecture)
-   * [d. Network Components](#d-network-components)
-   * [e. Data Transmission](#e-data-transmission)
-
----
-
 ## Quick Navigation
 
 | Section | Topic                                             |
