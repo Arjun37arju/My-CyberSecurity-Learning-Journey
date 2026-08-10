@@ -1,4 +1,4 @@
-# 1. Understand Network Fundamentals
+# Understand Network Fundamentals
 
 Network fundamentals explain **how computers and other devices communicate and exchange data** with each other.
 
