@@ -1,25 +1,25 @@
-# cyber-security-fundamentals
-My note and learning journey in Cyber Security Fundamentals, including cyber security concepts, threats , networking basics, security principles 
+# 🛡️ Cyber Security Fundamentals
 
+A structured record of my **Cyber Security learning journey** as a **Brototype student**, covering foundational concepts, technical knowledge, research, and hands-on security practice.
 
-Welcome to my Cyber Security Fundamentals repository.
+## 📖 About This Repository
 
-This repository contains my learning notes, cybersecurity concepts, and hands-on practice as I build a strong foundation in cybersecurity.
+This repository documents my learning **module by module**, combining theoretical understanding with practical application.
 
-## Topics Covered
+Each module includes:
 
-- Introduction to Cyber Security
-- Importance of Cyber Security
-- CIA Triad
-- Information Security
-- Digital Assets
-- Cyber Security Domains
-- Modern Threat Landscape
-- Common Cyber Attacks
-- Networking Basics
-- Linux Basics
-- Cyber Security Tools
+* 📚 **Theory** — Core concepts and security fundamentals
+* 🔎 **Research** — Security research and analysis
+* 🧪 **Hands-on Tasks** — Practical exercises and labs
+* 📝 **Documentation** — Notes, reports, and findings
+* 💻 **Projects** — Practical work demonstrating learned concepts
 
-## Learning Goal
+### 🔄 Learning Process
 
-To build a strong foundation in cybersecurity by learning core concepts, security principles, networking, operating systems, and practical security skills.
+```text
+Learn → Understand → Practice → Analyze → Document
+```
+
+## 🎯 Learning Objective
+
+To develop a strong foundation in cybersecurity and progressively build **practical, analytical, and problem-solving skills** through continuous learning and hands-on experience.
