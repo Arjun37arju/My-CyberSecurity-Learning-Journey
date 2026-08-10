@@ -1,6 +1,6 @@
 # Understand Cyber Security Fundamentals
 
-**Cyber Security** is the practice of protecting **computers, networks, applications, devices, and data** from unauthorized access, attacks, damage, or disruption.
+Cyber Security is the practice of protecting **digital systems, networks, devices, applications, and data** from cyber threats.
 
 ## Table of Contents
 
@@ -9,13 +9,12 @@
 * [c. Information Security vs Cyber Security](#c-information-security-vs-cyber-security)
 * [d. Cyber Security Domains](#d-cyber-security-domains)
 * [e. Modern Threat Landscape](#e-modern-threat-landscape)
-* [Quick Revision](#quick-revision)
 
 ---
 
 ## a. What is Cyber Security
 
-**Cyber Security** is the practice of **protecting digital systems, networks, devices, applications, and data from cyber threats**.
+**Cyber Security** is the practice of protecting **digital systems, networks, devices, applications, and data from cyber threats**.
 
 ```text
 Devices
@@ -33,14 +32,13 @@ Cyber Security helps protect against:
 
 * Malware
 * Phishing
-* Ransomware
 * Unauthorized access
 * Data breaches
-* DoS/DDoS attacks
+* Cyber attacks
 
 Example:
 
-> A company uses firewalls, strong passwords, antivirus software, access controls, and monitoring to protect its systems.
+> A company uses security controls to protect its computers, network, applications, and data from attackers.
 
 **Easy idea:**
 
@@ -50,57 +48,42 @@ Example:
 
 ## b. Why Cyber Security is Important
 
-Cyber Security is important because individuals and organizations depend heavily on digital systems to **store information, communicate, and provide services**.
+Cyber Security is important because people and organizations depend on digital systems for **communication, data storage, business, banking, and daily activities**.
 
 Without proper security, attackers may:
 
-* Steal sensitive information
+* Steal information
 * Access accounts
 * Damage systems
 * Disrupt services
-* Steal money
-* Expose confidential data
-
-### CIA Triad
-
-Cyber Security commonly focuses on three important principles:
+* Cause financial loss
+* Expose sensitive data
 
 ```text
-       CIA Triad
-       /   |   \
-      /    |    \
-Confidentiality Integrity Availability
+No Security
+     ↓
+Cyber Threat
+     ↓
+Unauthorized Access
+     ↓
+Data / System Damage
 ```
-
-### Confidentiality
-
-Only authorized people should be able to access information.
-
-### Integrity
-
-Information should not be changed without authorization.
-
-### Availability
-
-Systems and information should be available when needed.
 
 Example:
 
-> A bank protects customer information using encryption, authentication, access controls, monitoring, and other security controls.
+> A company protects its customer data to prevent attackers from stealing or exposing it.
 
 **Easy idea:**
 
-> **Cyber Security = Protect data + systems + services.**
+> **Cyber Security = Protecting systems, data, and services from cyber threats.**
 
 ---
 
 ## c. Information Security vs Cyber Security
 
-**Information Security (InfoSec)** focuses on protecting **information and data**, whether it is digital or physical.
+**Information Security (InfoSec)** focuses on protecting **information from unauthorized access, use, modification, disclosure, or destruction**.
 
 **Cyber Security** mainly focuses on protecting **digital systems, networks, devices, applications, and data from cyber threats**.
-
-### Simple Difference
 
 ```text
 Information Security
@@ -120,50 +103,41 @@ Systems + Networks + Devices + Data
 
 Example:
 
-> Protecting a paper document inside a locked cabinet is an Information Security concern.
+> Protecting a physical document is part of Information Security.
 
-> Protecting a computer network from hackers is a Cyber Security concern.
+> Protecting a computer network from cyber attacks is part of Cyber Security.
 
-### Comparison
+### Difference
 
-| Information Security                   | Cyber Security                         |
-| -------------------------------------- | -------------------------------------- |
-| Protects information                   | Protects digital environments          |
-| Digital + physical information         | Mainly digital systems                 |
-| Broader information protection concept | Focuses on cyber threats               |
-| Example: Locked physical documents     | Example: Firewall protecting a network |
+| Information Security                         | Cyber Security                    |
+| -------------------------------------------- | --------------------------------- |
+| Protects information                         | Protects digital environments     |
+| Can include physical and digital information | Mainly focuses on digital systems |
+| Broader information protection               | Focuses on cyber threats          |
 
 **Easy idea:**
 
 > **Information Security = Protect information.**
 
-> **Cyber Security = Protect digital systems and information from cyber threats.**
+> **Cyber Security = Protect digital systems from cyber threats.**
 
 ---
 
 ## d. Cyber Security Domains
 
-Cyber Security is divided into different **domains or areas of specialization**.
+**Cyber Security domains** are different areas of Cyber Security that focus on protecting different parts of a digital environment.
 
-Each domain focuses on protecting a particular part of an organization's technology environment.
+### Network Security
 
-### 1. Network Security
-
-Protects computer networks from unauthorized access, attacks, and suspicious activity.
+Protects computer networks from unauthorized access and attacks.
 
 ```text
 Network
    ↓
-Security Controls
+Security
    ↓
 Protected Network
 ```
-
-Examples:
-
-* Firewalls
-* Network monitoring
-* Intrusion detection
 
 **Easy idea:**
 
@@ -171,21 +145,17 @@ Examples:
 
 ---
 
-### 2. Application Security
+### Application Security
 
-Protects software and applications from vulnerabilities and attacks.
+Protects software and applications from security vulnerabilities and attacks.
 
 ```text
 Application
      ↓
-Security Testing
+Security
      ↓
-Secure Application
+Protected Application
 ```
-
-Example:
-
-> Developers perform security testing to find vulnerabilities in a web application.
 
 **Easy idea:**
 
@@ -193,21 +163,17 @@ Example:
 
 ---
 
-### 3. Cloud Security
+### Cloud Security
 
-Protects cloud environments, services, applications, and data.
+Protects cloud systems, services, applications, and data.
 
 ```text
 Cloud
   ↓
-Security Controls
+Security
   ↓
-Protected Data
+Protected Cloud Environment
 ```
-
-Example:
-
-> Protecting cloud storage from unauthorized access.
 
 **Easy idea:**
 
@@ -215,14 +181,12 @@ Example:
 
 ---
 
-### 4. Endpoint Security
+### Endpoint Security
 
-Protects devices connected to a network.
+Protects devices such as:
 
-Examples:
-
+* Computers
 * Laptops
-* Desktops
 * Smartphones
 * Servers
 
@@ -240,23 +204,19 @@ Endpoint Security
 
 ---
 
-### 5. Identity and Access Management
+### Identity and Access Management
 
-**IAM (Identity and Access Management)** controls **who can access a system and what they are allowed to do**.
+Controls **who can access systems and what they are allowed to access**.
 
 ```text
 User
  ↓
-Authentication
- ↓
-Authorization
+Identity
  ↓
 Access
+ ↓
+System
 ```
-
-Example:
-
-> An employee logs in and is given access only to the files required for their job.
 
 **Easy idea:**
 
@@ -264,91 +224,67 @@ Example:
 
 ---
 
-### 6. Security Operations
+### Security Operations
 
-Security Operations focuses on **monitoring, detecting, investigating, and responding to security threats**.
+Security Operations focuses on **monitoring systems and detecting security threats**.
 
 ```text
-Logs
- ↓
+Systems
+   ↓
 Monitoring
- ↓
+   ↓
 Detection
- ↓
-Investigation
- ↓
-Response
+   ↓
+Security Response
 ```
-
-Example:
-
-> A SOC monitors security alerts and investigates suspicious activity.
 
 **Easy idea:**
 
-> **Security Operations = Detecting and responding to threats.**
+> **Security Operations = Monitoring and detecting threats.**
 
 ---
 
-### 7. Incident Response
+### Incident Response
 
-Incident Response focuses on **handling and recovering from security incidents**.
+Incident Response focuses on **handling security incidents**.
 
 ```text
-Detect
-  ↓
-Analyze
-  ↓
-Contain
-  ↓
-Remove
-  ↓
-Recover
+Security Incident
+       ↓
+Investigation
+       ↓
+Response
+       ↓
+Recovery
 ```
-
-Example:
-
-> A security team investigates a compromised computer, isolates it, removes the threat, and restores normal operation.
 
 **Easy idea:**
 
-> **Incident Response = Responding to security incidents.**
+> **Incident Response = Handling security incidents.**
 
 ---
 
-### 8. Offensive Security
+### Offensive Security
 
-Offensive Security involves **authorized security testing** to identify weaknesses before attackers can exploit them.
-
-Examples:
-
-* Penetration testing
-* Red teaming
-* Vulnerability testing
+Offensive Security involves **authorized security testing to find weaknesses** in systems.
 
 ```text
 Authorized Testing
        ↓
 Find Weaknesses
        ↓
-Fix Weaknesses
+Improve Security
 ```
 
 **Easy idea:**
 
-> **Offensive Security = Finding weaknesses through authorized testing.**
+> **Offensive Security = Finding security weaknesses through authorized testing.**
 
 ---
 
-### 9. Governance, Risk and Compliance
+### Governance, Risk and Compliance
 
-**GRC (Governance, Risk and Compliance)** focuses on:
-
-* Security policies
-* Risk management
-* Regulations
-* Standards
-* Compliance
+**GRC** focuses on managing **security policies, risks, and compliance requirements**.
 
 ```text
 Policies
@@ -357,7 +293,7 @@ Risk
    +
 Compliance
    ↓
-   GRC
+GRC
 ```
 
 **Easy idea:**
@@ -368,18 +304,18 @@ Compliance
 
 ## e. Modern Threat Landscape
 
-The **modern threat landscape** refers to the current types of **cyber threats, attackers, vulnerabilities, and attack techniques** that organizations and individuals face.
+The **modern threat landscape** refers to the different **cyber threats and attack methods** that individuals and organizations face today.
 
-Cyber threats continuously evolve as technology and attacker techniques change.
+Cyber threats continue to change as technology and attacker techniques evolve.
 
-### 1. Phishing
+### Phishing
 
-Phishing uses fake messages, emails, or websites to trick users into giving information or performing an action.
+Phishing uses fake messages, emails, or websites to **trick users into giving information or performing an action**.
 
 ```text
 Fake Message
      ↓
-User Clicks
+User
      ↓
 Fake Website
      ↓
@@ -392,11 +328,9 @@ Information Theft
 
 ---
 
-### 2. Malware
+### Malware
 
-**Malware = Malicious Software**
-
-Malware is software designed to perform harmful or unauthorized actions.
+**Malware** means **malicious software** designed to perform harmful or unauthorized actions.
 
 Examples:
 
@@ -412,29 +346,29 @@ Examples:
 
 ---
 
-### 3. Ransomware
+### Ransomware
 
-Ransomware is malware that can **encrypt files or disrupt systems** and is commonly used for extortion.
+Ransomware is malware that can **encrypt or block access to data** and is commonly used for extortion.
 
 ```text
 Ransomware
     ↓
-Files Encrypted
+Data Encrypted
     ↓
-System Disruption
+Access Blocked
     ↓
 Extortion
 ```
 
 **Easy idea:**
 
-> **Ransomware = Encrypts or blocks data for extortion.**
+> **Ransomware = Blocks or encrypts data for extortion.**
 
 ---
 
-### 4. Data Breaches
+### Data Breaches
 
-A data breach occurs when sensitive or protected information is **accessed or exposed without authorization**.
+A data breach occurs when information is **accessed or exposed without authorization**.
 
 ```text
 Protected Data
@@ -450,110 +384,54 @@ Data Exposure
 
 ---
 
-### 5. DoS / DDoS
+### DoS / DDoS
 
-DoS and DDoS attacks attempt to make a system or service **unavailable**.
+DoS and DDoS attacks attempt to make a **service or system unavailable**.
 
 ```text
 Attack Traffic
-   ↓ ↓ ↓ ↓ ↓
+   ↓ ↓ ↓ ↓
    Server
      ↓
-Service Disruption
+Service Unavailable
 ```
 
 **Easy idea:**
 
-> **DoS/DDoS = Attempt to make a service unavailable.**
+> **DoS/DDoS = Making a service unavailable.**
 
 ---
 
-### 6. Supply Chain Attacks
+### Supply Chain Attacks
 
-A supply chain attack targets a **third-party vendor, software component, or service** to reach another organization.
+A supply chain attack targets a **third-party company, software, or service** to reach the intended target.
 
 ```text
 Attacker
    ↓
 Third Party
    ↓
-Target Organization
+Target
 ```
 
 **Easy idea:**
 
-> **Supply Chain Attack = Attack through a trusted third party.**
+> **Supply Chain Attack = Attacking through a trusted third party.**
 
 ---
 
-### 7. Zero-Day Vulnerabilities
+### Zero-Day Vulnerabilities
 
-A **zero-day vulnerability** is a security weakness that is unknown to the affected vendor or has not yet been effectively patched when it is exploited.
+A zero-day vulnerability is a **security weakness that is unknown to the vendor or has no effective patch available when it is exploited**.
 
 ```text
-Unknown Vulnerability
+Unknown Weakness
        ↓
 Exploitation
        ↓
-Vendor / Defenders
-       ↓
-Develop Fix
+Security Risk
 ```
 
 **Easy idea:**
 
-> **Zero-Day = Vulnerability with little or no effective defense available when exploited.**
-
----
-
-# Quick Revision
-
-| Topic                      | Simple Meaning                                         |
-| -------------------------- | ------------------------------------------------------ |
-| **Cyber Security**         | Protecting digital systems and data from cyber threats |
-| **Importance**             | Protects data, systems, users, and services            |
-| **Information Security**   | Protecting information in digital and physical forms   |
-| **Cyber Security Domains** | Different areas of cybersecurity                       |
-| **Threat Landscape**       | Current cyber threats and attack methods               |
-
-### Cyber Security Domains
-
-```text
-Network Security
-Application Security
-Cloud Security
-Endpoint Security
-Identity & Access Management
-Security Operations
-Incident Response
-Offensive Security
-GRC
-```
-
-### Modern Threats
-
-```text
-Phishing
-Malware
-Ransomware
-Data Breaches
-DoS / DDoS
-Supply Chain Attacks
-Zero-Day Vulnerabilities
-```
-
-### Easy Way to Remember
-
-```text
-Cyber Security
-      ↓
-   Protect
-      ↓
-Systems + Networks + Applications + Devices + Data
-      ↓
-Against
-      ↓
-Cyber Threats
-```
-
-> **Cyber Security = Protect → Detect → Respond → Recover**
+> **Zero-Day = Vulnerability with little or no effective defense when exploited.**
