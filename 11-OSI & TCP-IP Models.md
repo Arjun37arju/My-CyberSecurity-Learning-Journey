@@ -611,101 +611,29 @@ Ports help identify the destination service/process for transport-layer communic
 
 **Packet flow** describes how data moves from a source device toward a destination across a network.
 
-Example:
+# Packet Flow (Encapsulation)
 
-```text
-Laptop
-   ↓
-Access Point
-   ↓
-Switch
-   ↓
-Router
-   ↓
-ISP
-   ↓
-Internet
-   ↓
-Web Server
-```
+When data is sent, each layer adds its own information.
 
----
-
-## Example: Opening a Website
-
-You type:
-
-```text
-https://example.com
-```
-
-Your computer needs to communicate with a web server.
-
-A simplified flow is:
-
-```text
-Laptop
-  ↓
-Wi-Fi
-  ↓
-Access Point
-  ↓
-Switch
-  ↓
-Router
-  ↓
-ISP
-  ↓
-Internet
-  ↓
-Web Server
-```
-
----
-
-## Encapsulation
-
-When the sender sends data, information is added as data moves down the networking layers.
-
-Simplified:
-
-```text
-Application Data
-      ↓
-Transport Header + Data
-      ↓
-IP Header + Transport Data
-      ↓
-Frame Header + Packet
-      ↓
-Bits / Signals
-```
-
-Conceptually:
+This process is called **Encapsulation**.
 
 ```text
 Application
-    ↓
-   Data
-    ↓
+     ↓
 Transport
-    ↓
- Segment
-    ↓
+(Add TCP/UDP Header)
+     ↓
 Network
-    ↓
- Packet
-    ↓
+(Add IP Header)
+     ↓
 Data Link
-    ↓
- Frame
-    ↓
+(Add MAC Header)
+     ↓
 Physical
-    ↓
- Bits
-```
+(Convert to Bits)
+     ↓
+Network
 
-### Common names
 
 | Layer       | Data Unit                      |
 | ----------- | ------------------------------ |
@@ -735,77 +663,6 @@ Data
 
 The receiving system processes the headers and delivers the data to the appropriate application.
 
-### Complete flow
-
-```text
-SENDER
-
-Application
-    ↓
-Transport
-    ↓
-Network
-    ↓
-Data Link
-    ↓
-Physical
-    ↓
-    NETWORK
-    ↓
-Physical
-    ↓
-Data Link
-    ↓
-Network
-    ↓
-Transport
-    ↓
-Application
-
-RECEIVER
-```
-
----
-
-# Switch vs Router During Packet Flow
-
-This distinction is extremely important.
-
-### Switch
-
-A switch primarily operates at **Layer 2**.
-
-It uses MAC address information to forward frames within a LAN.
-
-```text
-PC 1
- ↓
-Switch
- ↓
-PC 2
-```
-
-### Router
-
-A router primarily operates at **Layer 3**.
-
-It uses IP addressing and routing information to forward packets between networks.
-
-```text
-LAN 1
- ↓
-Router
- ↓
-LAN 2
-```
-
-### Simple memory
-
-> **Switch → MAC → Frame → Layer 2**
-
-> **Router → IP → Packet → Layer 3**
-
----
 
 # e. Troubleshooting Concepts
 
