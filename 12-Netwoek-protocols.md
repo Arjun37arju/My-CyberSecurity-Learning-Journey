@@ -1,4 +1,4 @@
-# 3. Understand Network Protocols
+ Understand Network Protocols
 
 Network protocols are **rules that allow computers and devices to communicate with each other**.
 
