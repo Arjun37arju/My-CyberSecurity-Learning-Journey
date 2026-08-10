@@ -1,0 +1,281 @@
+Understand IP Addressing
+
+**IP addressing** is used to **identify devices on a network** so they can communicate with each other.
+
+## Table of Contents
+
+* [a. IPv4](#a-ipv4)
+* [b. IPv6](#b-ipv6)
+* [c. Public IPs](#c-public-ips)
+* [d. Private IPs](#d-private-ips)
+* [e. Subnetting Fundamentals](#e-subnetting-fundamentals)
+* [Quick Revision](#quick-revision)
+
+---
+
+## a. IPv4
+
+**IPv4 (Internet Protocol version 4)** is a common system for assigning IP addresses to devices.
+
+An IPv4 address has **4 numbers separated by dots**.
+
+Example:
+
+```text
+192.168.1.10
+```
+
+Each number can be from **0 to 255**.
+
+```text
+192 . 168 . 1 . 10
+ ↓     ↓    ↓    ↓
+ 1     2    3    4
+```
+
+IPv4 uses **32 bits**.
+
+Example:
+
+> Your laptop may have an IPv4 address such as `192.168.1.10` inside your home network.
+
+**Easy idea:**
+
+> **IPv4 = 32-bit IP address written as four numbers.**
+
+---
+
+## b. IPv6
+
+**IPv6 (Internet Protocol version 6)** was developed to provide a much larger number of IP addresses.
+
+IPv6 uses **128 bits**.
+
+Example:
+
+```text
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+```
+
+IPv6 uses **hexadecimal numbers separated by colons**.
+
+Example:
+
+```text
+IPv4
+192.168.1.10
+
+IPv6
+2001:db8:85a3::8a2e:370:7334
+```
+
+Because IPv6 uses 128 bits, it provides a **much larger address space** than IPv4.
+
+**Easy idea:**
+
+> **IPv6 = 128-bit IP addressing system with a huge address space.**
+
+---
+
+## c. Public IPs
+
+A **public IP address** is an IP address used to identify a network or device **on the public Internet**.
+
+Your Internet Service Provider (**ISP**) usually provides your home network with a public IP address.
+
+```text
+Your Device
+     ↓
+  Router
+     ↓
+ Public IP
+     ↓
+ Internet
+```
+
+Example:
+
+```text
+Home Network
+     ↓
+ Public IP
+     ↓
+ Internet
+```
+
+A public IP can generally be reached from the Internet, depending on firewalls, routing, and other security controls.
+
+**Easy idea:**
+
+> **Public IP = IP address used on the Internet.**
+
+---
+
+## d. Private IPs
+
+A **private IP address** is used inside a **local network**, such as your home, office, or school network.
+
+Common private IPv4 ranges are:
+
+```text
+10.0.0.0       → 10.255.255.255
+
+172.16.0.0     → 172.31.255.255
+
+192.168.0.0    → 192.168.255.255
+```
+
+Example:
+
+```text
+Laptop       → 192.168.1.10
+Phone        → 192.168.1.11
+Smart TV     → 192.168.1.12
+                  ↓
+                Router
+                  ↓
+              Public IP
+                  ↓
+               Internet
+```
+
+Private IP addresses are **not directly routable across the public Internet**.
+
+A home router commonly uses **NAT (Network Address Translation)** to allow devices with private IP addresses to access the Internet through a public IP.
+
+**Easy idea:**
+
+> **Private IP = Used inside a local network.**
+
+---
+
+## e. Subnetting Fundamentals
+
+**Subnetting** means dividing one network into **smaller networks called subnets**.
+
+It helps organizations organize networks and manage IP addresses more efficiently.
+
+### Simple Example
+
+Suppose we have:
+
+```text
+192.168.1.0/24
+```
+
+We can divide it into smaller subnets:
+
+```text
+192.168.1.0/25
+      ↓
+   Subnet 1
+
+192.168.1.128/25
+      ↓
+   Subnet 2
+```
+
+Instead of having one larger network, we now have **two smaller networks**.
+
+### What is `/24`?
+
+`/24` is called a **CIDR prefix length**.
+
+It tells us how many bits of the IPv4 address are used for the **network portion**.
+
+```text
+192.168.1.0/24
+          ↑
+     24 network bits
+```
+
+IPv4 has **32 bits** in total.
+
+```text
+32 total bits
+− 24 network bits
+= 8 host bits
+```
+
+A `/24` IPv4 network contains **256 total addresses**.
+
+Traditionally, **254 addresses are usable for hosts**, because one address is used for the network and one for broadcast.
+
+### Why Use Subnetting?
+
+Subnetting helps with:
+
+* Organizing networks
+* Separating departments
+* Managing IP addresses
+* Reducing unnecessary network traffic
+* Improving network segmentation
+* Designing larger networks efficiently
+
+### Example
+
+```text
+Company Network
+      │
+      ├── HR Network
+      │
+      ├── IT Network
+      │
+      ├── Finance Network
+      │
+      └── Guest Network
+```
+
+Each department can use a different subnet.
+
+**Easy idea:**
+
+> **Subnetting = Dividing one network into smaller networks.**
+
+---
+
+# Public IP vs Private IP
+
+| Feature                    | Public IP              | Private IP           |
+| -------------------------- | ---------------------- | -------------------- |
+| Used on                    | Internet               | Local network        |
+| Globally unique            | Yes                    | No                   |
+| Example                    | `8.8.8.8`              | `192.168.1.10`       |
+| Directly Internet-routable | Generally yes          | No                   |
+| Common use                 | Internet communication | Home/office networks |
+
+---
+
+# IPv4 vs IPv6
+
+| Feature       | IPv4                        | IPv6                        |
+| ------------- | --------------------------- | --------------------------- |
+| Full Form     | Internet Protocol version 4 | Internet Protocol version 6 |
+| Address Size  | 32-bit                      | 128-bit                     |
+| Example       | `192.168.1.10`              | `2001:db8::1`               |
+| Separator     | Dot `.`                     | Colon `:`                   |
+| Address Space | Smaller                     | Extremely large             |
+
+---
+
+# Quick Revision
+
+```text
+IPv4       → 32-bit IP address
+IPv6       → 128-bit IP address
+Public IP  → Used on the Internet
+Private IP → Used inside local networks
+Subnetting → Divides a network into smaller networks
+```
+
+### Easy Way to Remember
+
+> **IPv4 → 32-bit addressing**
+
+> **IPv6 → 128-bit addressing**
+
+> **Public IP → Internet**
+
+> **Private IP → Local network**
+
+> **Subnetting → Network → Smaller networks**
