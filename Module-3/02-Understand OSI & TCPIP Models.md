@@ -1,4 +1,4 @@
-#  Understand OSI & TCP/IP Models
+# Understand OSI & TCP/IP Models
 
 The **OSI and TCP/IP models** help us understand **how data travels between devices over a network** and what each layer is responsible for.
 
@@ -18,7 +18,7 @@ The **OSI and TCP/IP models** help us understand **how data travels between devi
 
 **OSI (Open Systems Interconnection) Model** is a **7-layer model** used to understand how network communication works.
 
-```text id="osi7l"
+```text
 7. Application
 6. Presentation
 5. Session
@@ -29,8 +29,6 @@ The **OSI and TCP/IP models** help us understand **how data travels between devi
 ```
 
 Each layer has a specific responsibility.
-
-### The 7 Layers
 
 | Layer | Name         | Main Responsibility                              |
 | ----: | ------------ | ------------------------------------------------ |
@@ -45,31 +43,6 @@ Each layer has a specific responsibility.
 **Easy idea:**
 
 > **OSI = 7 layers that explain how network communication works.**
-
-### Practical Task
-
-Create your own **OSI Model diagram**.
-
-For every layer, write:
-
-* Layer number
-* Layer name
-* Main responsibility
-* One example protocol or technology
-
-### Deliverable
-
-Create:
-
-```text
-osi-model.md
-```
-
-with a complete OSI layer table and diagram.
-
-**Goal:**
-
-> Understand the purpose of all seven OSI layers.
 
 ---
 
@@ -98,21 +71,17 @@ It commonly has **4 layers**:
 Examples:
 
 ```text
-Application → HTTP, DNS, SSH
-Transport   → TCP, UDP
-Internet    → IP
-Network Access → Ethernet, Wi-Fi
+Application     → HTTP, DNS, SSH
+Transport       → TCP, UDP
+Internet        → IP
+Network Access  → Ethernet, Wi-Fi
 ```
 
 **Easy idea:**
 
 > **TCP/IP = Practical model used to understand Internet communication.**
 
-### Practical Task
-
-Research the TCP/IP model and compare it with the OSI model.
-
-Create a mapping:
+### OSI and TCP/IP Mapping
 
 ```text
 OSI                    TCP/IP
@@ -129,20 +98,6 @@ Data Link     ─┐
 Physical      ─┴──→ Network Access
 ```
 
-### Deliverable
-
-Create:
-
-```text
-tcp-ip-model.md
-```
-
-including the model, layer responsibilities, and OSI-to-TCP/IP mapping.
-
-**Goal:**
-
-> Understand how the OSI and TCP/IP models relate to each other.
-
 ---
 
 ## c. Layer Responsibilities
@@ -151,16 +106,14 @@ including the model, layer responsibilities, and OSI-to-TCP/IP mapping.
 
 Each network layer performs a different job.
 
-A simple way to remember them:
-
 ```text
-Application → What service?
-Presentation → What format?
-Session → What connection/session?
-Transport → How to deliver?
-Network → Where to send?
-Data Link → Which local device?
-Physical → How are bits transmitted?
+Application  → Network services
+Presentation → Data format
+Session      → Communication sessions
+Transport    → End-to-end delivery
+Network      → Addressing and routing
+Data Link    → Local network communication
+Physical     → Transmission of bits
 ```
 
 ### Example
@@ -195,40 +148,6 @@ Electrical / Radio / Light signals
 **Easy idea:**
 
 > **Each layer performs a specific part of the communication process.**
-
-### Practical Task
-
-Choose one activity:
-
-> Opening a website.
-
-Explain what happens at each OSI layer.
-
-Create a table:
-
-| OSI Layer    | What Happens? |
-| ------------ | ------------- |
-| Application  |               |
-| Presentation |               |
-| Session      |               |
-| Transport    |               |
-| Network      |               |
-| Data Link    |               |
-| Physical     |               |
-
-### Deliverable
-
-Create:
-
-```text
-layer-responsibilities.md
-```
-
-with your explanation.
-
-**Goal:**
-
-> Understand what each layer does during real network communication.
 
 ---
 
@@ -284,52 +203,6 @@ This process is commonly called **encapsulation and decapsulation**.
 
 > **Packet Flow = How data moves from one device to another through the network.**
 
-### Practical Task
-
-Create a packet-flow diagram for:
-
-> **Your computer opening a website.**
-
-Show:
-
-```text
-Computer
-   ↓
-Router
-   ↓
-Internet
-   ↓
-Web Server
-```
-
-Then show the data format at different layers:
-
-```text
-Application Data
-       ↓
-TCP Segment
-       ↓
-IP Packet
-       ↓
-Ethernet Frame
-       ↓
-Bits
-```
-
-### Deliverable
-
-Create:
-
-```text
-packet-flow.md
-```
-
-and include a packet-flow diagram.
-
-**Goal:**
-
-> Understand how data is encapsulated and transmitted across a network.
-
 ---
 
 ## e. Troubleshooting Concepts
@@ -338,7 +211,7 @@ and include a packet-flow diagram.
 
 **Network troubleshooting** is the process of finding and fixing problems that prevent network communication from working correctly.
 
-A simple troubleshooting process is:
+A basic troubleshooting approach is:
 
 ```text
 Identify Problem
@@ -390,132 +263,3 @@ Check Website / Service
 **Easy idea:**
 
 > **Troubleshooting = Find the problem → identify the cause → fix it → verify the solution.**
-
-### Practical Task
-
-Create **5 network troubleshooting scenarios**.
-
-Example:
-
-> **Scenario:** Computer is connected to Wi-Fi but cannot access websites.
-
-Investigate possible causes such as:
-
-* Wi-Fi connection
-* IP configuration
-* Default gateway
-* DNS
-* Internet connection
-
-For each scenario, document:
-
-```text
-Problem:
-Possible Cause:
-Test:
-Finding:
-Solution:
-Verification:
-```
-
-### Deliverable
-
-Create:
-
-```text
-troubleshooting.md
-```
-
-containing your five scenarios and solutions.
-
-**Goal:**
-
-> Develop a structured approach to identifying and solving common network problems.
-
----
-
-# Final Practical Project
-
-Create a **OSI & TCP/IP Networking Project** combining all five topics.
-
-```text
-OSI Model
-    ↓
-TCP/IP Model
-    ↓
-Layer Responsibilities
-    ↓
-Packet Flow
-    ↓
-Troubleshooting
-```
-
-### Final Challenge
-
-Take this scenario:
-
-> **A user can connect to Wi-Fi but cannot open websites.**
-
-Analyze the problem using the OSI model.
-
-```text
-Application
-    ↓
-Is the website/service working?
-
-Transport
-    ↓
-Is the connection reaching the service?
-
-Network
-    ↓
-Does the device have a valid IP and gateway?
-
-Data Link
-    ↓
-Is the device connected to the local network?
-
-Physical
-    ↓
-Is the network connection working?
-```
-
-Then document:
-
-1. What you checked
-2. Which layer was involved
-3. What you found
-4. What caused the problem
-5. How you fixed it
-6. How you verified the solution
-
-### Final GitHub Structure
-
-```text
-OSI-TCPIP-Models/
-│
-├── README.md
-├── osi-model.md
-├── tcp-ip-model.md
-├── layer-responsibilities.md
-├── packet-flow.md
-├── troubleshooting.md
-└── diagrams/
-    ├── osi-model.png
-    └── packet-flow.png
-```
-
-### Expected Result
-
-After completing this project, you should be able to:
-
-* Explain the OSI model
-* Explain the TCP/IP model
-* Understand the responsibility of each layer
-* Explain packet flow
-* Understand encapsulation and decapsulation
-* Troubleshoot basic network problems
-* Use OSI layers to locate possible network issues
-* Document networking concepts professionally
-
-> **Understand the layers → Follow the data → Find the problem → Fix it → Document it**
