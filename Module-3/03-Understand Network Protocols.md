@@ -202,3 +202,14 @@ Example:
 **Easy idea:**
 
 > **SSH = Secure remote access.**
+
+
+
+* **HTTP** — Port **80**
+* **HTTPS** — Port **443**
+* **DNS** — Port **53**
+* **DHCP** — Ports **67, 68**
+* **FTP** — Ports **20, 21**
+* **SMTP** — Port **25**
+* **SSH** — Port **22**
+
