@@ -114,39 +114,94 @@ Private IP addresses are commonly used in homes, offices, and other internal net
 
 ---
 
-## e. Subnetting Fundamentals
+e. Subnetting Fundamentals
+Content
 
-### Content
+Subnetting is the process of dividing one network into smaller logical networks called subnets.
 
-**Subnetting** is the process of dividing a network into **smaller logical networks called subnets**.
-
-```text
 Large Network
       ↓
- ┌────┼────┐
- ↓    ↓    ↓
-Subnet Subnet Subnet
-```
+ ┌────┼────┬────┐
+ ↓    ↓    ↓    ↓
+Subnet Subnet Subnet Subnet
 
 Subnetting helps with:
 
-* Organizing networks
-* Managing IP addresses
-* Separating network sections
-* Improving network design
+Organizing networks
+Managing IP addresses
+Separating network sections
+Controlling network traffic
+Efficiently using IP addresses
+Subnet Mask
 
-Subnetting commonly uses **CIDR notation**.
+A subnet mask determines which part of an IPv4 address represents the network and which part represents the host.
 
 Example:
 
-```text
+IP Address:
+192.168.1.10
+
+Subnet Mask:
+255.255.255.0
+
+This is commonly represented as:
+
+192.168.1.10/24
+CIDR Notation
+
+CIDR (Classless Inter-Domain Routing) uses /number notation to represent the network prefix.
+
+Examples:
+
 192.168.1.0/24
-```
+192.168.1.0/25
+192.168.1.0/26
+192.168.1.0/27
+192.168.1.0/28
 
-The `/24` represents the number of bits used for the network portion of the address.
+The number after / represents the number of network bits.
 
-A `/24` IPv4 network contains **256 total addresses**.
+For IPv4:
 
-**Easy idea:**
+/8   → 8 network bits
+/16  → 16 network bits
+/24  → 24 network bits
+/32  → 32 network bits
+Common IPv4 CIDR Notations
+CIDR	Subnet Mask	Total Addresses
+/8	255.0.0.0	16,777,216
+/16	255.255.0.0	65,536
+/24	255.255.255.0	256
+/25	255.255.255.128	128
+/26	255.255.255.192	64
+/27	255.255.255.224	32
+/28	255.255.255.240	16
+/29	255.255.255.248	8
+/30	255.255.255.252	4
+/32	255.255.255.255	1
 
-> **Subnetting = Dividing one network into smaller networks.**
+For a typical IPv4 subnet, some addresses have special purposes:
+
+Network Address
+      ↓
+192.168.1.0
+
+Usable Host Addresses
+      ↓
+192.168.1.1 – 192.168.1.254
+
+Broadcast Address
+      ↓
+192.168.1.255
+
+So a /24 network has:
+
+256 total addresses
+      ↓
+1 Network Address
+254 Usable Host Addresses
+1 Broadcast Address
+
+Easy idea:
+
+Subnetting = Dividing a larger network into smaller networks using subnet masks and CIDR notation.
