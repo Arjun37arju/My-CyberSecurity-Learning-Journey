@@ -46,9 +46,9 @@ To develop a strong foundation in cybersecurity and progressively build **practi
 
 **Arjun R**
 
-🎓 Diploma CSE Student
-🔐 Cyber Security | Ethical Hacking | SOC
-🚀 Open to Internships & Jobs
+🎓 Diploma in Computer Science and Engineering  
+🎓 Currently studying Cyber Security at Brototype  
+🔐 Cyber Security | Ethical Hacking | Red Team
 
 🔗 **LinkedIn:** [linkedin.com/in/arjun37](https://www.linkedin.com/in/arjun37/)
 
