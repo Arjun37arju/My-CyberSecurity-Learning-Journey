@@ -2,7 +2,7 @@
 
 # 🛡️ Cyber Security Fundamentals
 
-<img src="./sioux.png" alt="Cyber Security" width="100%">
+<img src="./assets/sioux.png" alt="Cyber Security" width="100%">
 
 ### 🔐 Learn → Understand → Practice → Analyze → Document
 
