@@ -945,6 +945,18 @@ bg
 systemctl
 ```
 
+---
+
+## 📚 Additional Resources
+
+### Linux Commands Reference
+
+Finished Task 1?
+
+👉 [Open Linux Fundamentals Commands Reference](../assets/Linux_Fundamentals_Task_1_.pdf)
+
+
+
 **Easy idea:**
 
 > **Linux Fundamentals = Understand how Linux is structured, where files are stored, who can access them, what is running, and which services are operating.**
