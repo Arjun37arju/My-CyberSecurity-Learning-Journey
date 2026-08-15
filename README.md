@@ -2,8 +2,6 @@
 
 # 🛡️ Cyber Security Fundamentals
 
-<img src="./sioux.png" alt="Cyber Security" width="100%">
-### 🔐 Learn → Understand → Practice → Analyze → Document
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Arjun%20R-blue?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/arjun37/)
 
