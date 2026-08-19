@@ -318,9 +318,4 @@ iostat
 
 ### Linux Commands Reference
 
-
-
-👉 [Open Linux Fundamentals Commands Reference](../assets/Linux_Fundamentals_Task_1_.pdf)
-
-
-
+👉 [Open Linux Fundamentals Commands Reference](../assets/Practical%20Commands%2C%20Usage%20%26%20Troubleshooting%20Workflows.md)
