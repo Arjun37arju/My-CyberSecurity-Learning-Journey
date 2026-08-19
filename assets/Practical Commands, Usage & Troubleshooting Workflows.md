@@ -3,12 +3,8 @@
 ## a. Linux Ecosystem
 
 **`uname`**
-
 Shows basic information about the Linux system and kernel.
-
 **How to use:** `uname -a`
-
----
 
 **`hostname`**
 Displays the system's hostname.
