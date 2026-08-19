@@ -5,6 +5,7 @@
 **`uname`**
 
 Shows basic information about the Linux system and kernel.
+
 **How to use:** `uname -a`
 
 **`hostname`**
