@@ -10,7 +10,7 @@ Shows basic information about the Linux system and kernel.
 
 ---
 
-**`hostname`**
+**`hostname`**/
 Displays the system's hostname.
 **How to use:** `hostname`
 
