@@ -295,9 +295,6 @@ Performance observation can help identify:
 
 ---
 
-## Conclusion
-
-System monitoring is an essential skill for Linux administration and cybersecurity. By monitoring processes, memory, disk utilization, services, and overall performance, security professionals can understand system behavior, identify abnormal activity, troubleshoot problems, and detect potential security threats.
 
 ### Key Commands to Remember
 
@@ -314,3 +311,16 @@ uptime
 vmstat
 iostat
 ```
+
+---
+
+## 📚 Additional Resources
+
+### Linux Commands Reference
+
+
+
+👉 [Open Linux Fundamentals Commands Reference](../assets/Linux_Fundamentals_Task_1_.pdf)
+
+
+
