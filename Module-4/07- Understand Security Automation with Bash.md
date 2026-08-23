@@ -9,7 +9,7 @@
 * [d. Automated Reporting](#d-automated-reporting)
 * [e. Security Administration Tasks](#e-security-administration-tasks)
 * [Practical Security Automation Script](#practical-security-automation-script)
-* [Conclusion](#conclusion)
+
 
 ---
 
