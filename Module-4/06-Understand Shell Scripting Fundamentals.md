@@ -8,7 +8,7 @@
 * [c. Loops](#c-loops)
 * [d. Functions](#d-functions)
 * [e. Script Execution](#e-script-execution)
-* [Conclusion](#conclusion)
+
 
 ## Introduction
 
