@@ -185,19 +185,3 @@ The exact defense depends on the type and scale of the attack.
 
 ---
 
-# Final Practical Project
-
-Create a **Denial of Service Attack Research Report** combining all five topics.
-
-```text id="n5c8r2"
-DoS
- ↓
-DDoS
- ↓
-Botnets
- ↓
-Attack Impact
- ↓
-Mitigation
-```
-
