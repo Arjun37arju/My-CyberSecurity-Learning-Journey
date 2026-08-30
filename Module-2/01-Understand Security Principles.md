@@ -34,17 +34,6 @@ Data Protection
 
 > **Defense in Depth = Multiple security layers working together.**
 
-### Practical Task
-
-Design a basic security system for a small organization using multiple security layers.
-
-Include:
-
-* Network protection
-* Authentication
-* Access control
-* Endpoint protection
-* Data protection
 
 ### Deliverable
 
@@ -70,25 +59,6 @@ Example:
 
 > **Least Privilege = Give only the access that is needed.**
 
-### Practical Task
-
-Create a fictional organization with different users.
-
-For example:
-
-```text
-Employee
-Manager
-Administrator
-```
-
-Decide what each user needs to access.
-
-| User          | Required Access | Unnecessary Access |
-| ------------- | --------------- | ------------------ |
-| Employee      |                 |                    |
-| Manager       |                 |                    |
-| Administrator |                 |                    |
 
 ### Deliverable
 
@@ -124,15 +94,7 @@ Allow or Deny
 
 > **Zero Trust = Verify before allowing access.**
 
-### Practical Task
 
-Create a Zero Trust access scenario.
-
-Example:
-
-> An employee wants to access a company's internal application.
-
-Create a workflow showing how the user's access is verified.
 
 ### Deliverable
 
@@ -167,16 +129,7 @@ Each layer protects a different part of the environment.
 
 > **Security Layers = Protect different parts of a system with appropriate security controls.**
 
-### Practical Task
 
-Create a simple security architecture containing different security layers.
-
-| Security Layer | Protects | Security Control | Possible Problem |
-| -------------- | -------- | ---------------- | ---------------- |
-| Network        |          |                  |                  |
-| Application    |          |                  |                  |
-| Endpoint       |          |                  |                  |
-| Data           |          |                  |                  |
 
 ### Deliverable
 
@@ -215,29 +168,7 @@ Example:
 
 > **Risk Reduction = Take actions that reduce security risk.**
 
-### Practical Task
 
-Create a fictional security scenario and identify:
-
-```text
-Threat
-   ↓
-Vulnerability
-   ↓
-Risk
-   ↓
-Security Control
-   ↓
-Risk Reduction
-```
-
-Create a table:
-
-| Threat | Vulnerability | Risk | Security Control | How Risk Is Reduced |
-| ------ | ------------- | ---- | ---------------- | ------------------- |
-|        |               |      |                  |                     |
-|        |               |      |                  |                     |
-|        |               |      |                  |                     |
 
 ### Deliverable
 
@@ -249,37 +180,5 @@ Create:
 4. GitHub documentation
 
 ---
-
-# Final Practical Project
-
-Combine all five principles into one security design for a fictional organization.
-
-```text
-Defense in Depth
-       ↓
-Security Layers
-       ↓
-Least Privilege
-       ↓
-Zero Trust
-       ↓
-Risk Reduction
-```
-
-### Final Deliverable
-
-Create a GitHub project containing:
-
-```text
-Security-Principles/
-│
-├── README.md
-├── defense-in-depth.md
-├── least-privilege.md
-├── zero-trust.md
-├── security-layers.md
-├── risk-reduction.md
-└── diagrams/
-```
 
 > **Learn → Understand → Practice → Design → Document**
