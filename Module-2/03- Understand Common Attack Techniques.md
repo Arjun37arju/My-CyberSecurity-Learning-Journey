@@ -47,14 +47,6 @@ Example:
 
 ### Practical Task
 
-Find a **real-world phishing example** and research:
-
-* What the message looked like
-* Who was targeted
-* What the attacker wanted
-* What technique was used
-* How the attack could be identified
-* How users could protect themselves
 
 ### Deliverable
 
