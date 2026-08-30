@@ -44,28 +44,6 @@ Example:
 
 > **Surface Web = Public websites that search engines can index.**
 
-### Practical Task
-
-Choose **5 public websites** and identify:
-
-* Website name
-* Purpose
-* Type of information available
-* Whether it can be found through a search engine
-
-### Deliverable
-
-Create a **Surface Web Research Table**:
-
-| Website | Purpose | Information Available | Search Engine Indexed? |
-| ------- | ------- | --------------------- | ---------------------- |
-|         |         |                       |                        |
-|         |         |                       |                        |
-|         |         |                       |                        |
-
-**Goal:**
-
-> Understand what the Surface Web is and identify publicly accessible information.
 
 ---
 
@@ -103,31 +81,7 @@ Example:
 
 > **Deep Web = Internet content not normally indexed by search engines.**
 
-### Practical Task
 
-Identify **5 examples of Deep Web content** that you use or encounter in everyday life.
-
-For each example, explain:
-
-* What the service is
-* Why it is not publicly searchable
-* What type of access is required
-
-### Deliverable
-
-Create a table:
-
-| Example        | Why It Is Deep Web | Access Required |
-| -------------- | ------------------ | --------------- |
-| Private Email  |                    |                 |
-| Online Banking |                    |                 |
-|                |                    |                 |
-|                |                    |                 |
-|                |                    |                 |
-
-**Goal:**
-
-> Understand that the Deep Web mainly consists of content that requires restricted or private access.
 
 ---
 
@@ -162,34 +116,6 @@ Hidden Services
 
 > **Dark Web = Intentionally hidden Internet services requiring special access.**
 
-### Practical Task
-
-Research the difference between:
-
-```text id="2z8mqp"
-Surface Web
-      ↓
-Deep Web
-      ↓
-Dark Web
-```
-
-Create a comparison table:
-
-| Feature                 | Surface Web | Deep Web | Dark Web |
-| ----------------------- | ----------- | -------- | -------- |
-| Search Engine Indexed   |             |          |          |
-| Requires Special Access |             |          |          |
-| Example                 |             |          |          |
-| Main Characteristic     |             |          |          |
-
-### Deliverable
-
-Create a **Surface Web vs Deep Web vs Dark Web** comparison document.
-
-**Goal:**
-
-> Understand the differences between these three parts of the Internet without confusing the Deep Web with the Dark Web.
 
 ---
 
@@ -228,36 +154,7 @@ For example, a VPN can help hide your IP address from websites and encrypt traff
 
 > **Anonymous Browsing = Reducing identifying information while browsing, not guaranteed complete anonymity.**
 
-### Practical Task
 
-Research and compare:
-
-* Normal browser
-* VPN
-* Tor
-* Privacy-focused browser
-
-For each one, identify:
-
-* What it does
-* What information it can help protect
-* What it does not protect
-* Limitations
-
-### Deliverable
-
-Create a comparison table:
-
-| Technology              | What It Does | Helps Protect | Limitations |
-| ----------------------- | ------------ | ------------- | ----------- |
-| Normal Browser          |              |               |             |
-| VPN                     |              |               |             |
-| Tor                     |              |               |             |
-| Privacy-focused Browser |              |               |             |
-
-**Goal:**
-
-> Understand different privacy technologies and their limitations.
 
 ---
 
@@ -301,84 +198,6 @@ Good privacy practices include:
 
 > **Online Privacy = Understand and control what personal information you share online.**
 
-### Practical Task
-
-Perform a **personal online privacy audit**.
-
-Review your own accounts and devices and check:
-
-* Privacy settings
-* Account security
-* App permissions
-* Location permissions
-* Publicly visible information
-* Password reuse
-* Multi-factor authentication
-
-Do not share your passwords or sensitive personal information in your report.
-
-### Deliverable
-
-Create a **Privacy Awareness Checklist**:
-
-| Privacy Area       | Current Status | Improvement Needed |
-| ------------------ | -------------- | ------------------ |
-| Account Privacy    |                |                    |
-| Password Security  |                |                    |
-| MFA                |                |                    |
-| App Permissions    |                |                    |
-| Location Sharing   |                |                    |
-| Public Information |                |                    |
-
-**Goal:**
-
-> Become more aware of your digital footprint and improve your personal online privacy.
 
 ---
 
-# Final Practical Project
-
-Create a **Web & Internet Security Basics Report** comparing all five topics.
-
-```text id="w8c3n2"
-Surface Web
-     ↓
-Deep Web
-     ↓
-Dark Web
-     ↓
-Anonymous Browsing
-     ↓
-Online Privacy
-```
-
-### Final Deliverable
-
-Create a GitHub project:
-
-```text id="g2v7m4"
-Web-Internet-Security/
-│
-├── README.md
-├── surface-web.md
-├── deep-web.md
-├── dark-web.md
-├── anonymous-browsing.md
-├── online-privacy.md
-└── comparison.md
-```
-
-### Expected Result
-
-After completing this project, you should be able to:
-
-* Explain the Surface Web
-* Explain the Deep Web
-* Explain the Dark Web
-* Distinguish Deep Web from Dark Web
-* Understand basic anonymous browsing concepts
-* Understand the limitations of online anonymity
-* Identify common online privacy risks
-* Improve your own privacy practices
-
-> **Understand → Compare → Research → Audit → Document**
