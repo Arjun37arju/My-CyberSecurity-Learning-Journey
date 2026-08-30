@@ -98,17 +98,7 @@ Example:
 
 > **Social Engineering = Manipulating people to bypass security.**
 
-### Practical Task
 
-Research a real-world social engineering incident.
-
-Identify:
-
-* Who was targeted
-* What manipulation technique was used
-* Why the victim trusted the attacker
-* What information or access was targeted
-* How the attack could have been prevented
 
 ### Deliverable
 
@@ -150,18 +140,6 @@ Example:
 
 > **Credential Attack = Attempt to obtain or misuse authentication information.**
 
-### Practical Task
-
-Research a real-world credential attack.
-
-Find out:
-
-* What type of credential attack occurred
-* How credentials were obtained
-* What was targeted
-* What was the impact
-* How the attack was detected
-* How it could have been prevented
 
 ### Deliverable
 
@@ -216,18 +194,6 @@ Example:
 
 > **Malware Delivery = How malicious software reaches a victim.**
 
-### Practical Task
-
-Research a real-world malware delivery campaign.
-
-Identify:
-
-* Delivery method
-* Target
-* Type of malware
-* How the victim was tricked or exposed
-* What happened after delivery
-* How the delivery could have been prevented
 
 ### Deliverable
 
@@ -290,19 +256,7 @@ Reconnaissance can be:
 
 > **Reconnaissance = Gathering information about a target.**
 
-### Practical Task
 
-Perform a **passive reconnaissance exercise** on an organization or domain that you own or are explicitly authorized to research.
-
-Research publicly available information such as:
-
-* Domain information
-* Subdomains
-* Technologies
-* Public documents
-* Publicly available organizational information
-
-Organize your findings without attempting unauthorized access.
 
 ### Deliverable
 
