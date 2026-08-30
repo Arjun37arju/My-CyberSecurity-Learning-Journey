@@ -45,22 +45,6 @@ Example:
 
 > **Phishing = Fake communication used to trick people.**
 
-### Practical Task
-
-
-### Deliverable
-
-Create a **Phishing Analysis** containing:
-
-```text
-Attack:
-Target:
-Technique:
-Attacker's Goal:
-Warning Signs:
-Prevention:
-Source:
-```
 
 ---
 
@@ -97,12 +81,6 @@ Example:
 **Easy idea:**
 
 > **Social Engineering = Manipulating people to bypass security.**
-
-
-
-### Deliverable
-
-Create a **Social Engineering Case Study** explaining the attacker's manipulation method and the security lessons learned.
 
 > Only analyze real examples or use simulated scenarios in your own lab. Do not attempt to manipulate real people.
 
@@ -141,22 +119,7 @@ Example:
 > **Credential Attack = Attempt to obtain or misuse authentication information.**
 
 
-### Deliverable
 
-Create a **Credential Attack Analysis**.
-
-Include:
-
-| Item              | Findings |
-| ----------------- | -------- |
-| Attack Type       |          |
-| Target            |          |
-| Credential Source |          |
-| Impact            |          |
-| Detection         |          |
-| Prevention        |          |
-
-For practical learning, perform password-security exercises **only in your own authorized lab environment**.
 
 ---
 
@@ -194,24 +157,7 @@ Example:
 
 > **Malware Delivery = How malicious software reaches a victim.**
 
-
-### Deliverable
-
-Create a **Malware Delivery Analysis**.
-
-```text id="6u4n9p"
-Delivery Method
-      ↓
-Initial Access
-      ↓
-Malware Execution
-      ↓
-Impact
-      ↓
-Prevention
-```
-
-For hands-on practice, use **safe simulated files or intentionally vulnerable lab environments** rather than real malware.
+>For hands-on practice, use **safe simulated files or intentionally vulnerable lab environments** rather than real malware.
 
 ---
 
@@ -258,44 +204,9 @@ Reconnaissance can be:
 
 
 
-### Deliverable
-
-Create a **Reconnaissance Report**:
-
-```text id="x6m3v8"
-Target:
-Scope:
-Information Found:
-Domains:
-Technologies:
-Public Information:
-Potential Attack Surface:
-Sources:
-```
-
-**Goal:**
-
-> Learn how information can be collected and organized during the reconnaissance phase of a security assessment.
 
 ---
 
-# Final Practical Project
-
-Choose a **fictional organization or an authorized lab environment** and create a report showing how the five attack techniques work at a high level.
-
-```text id="q9k2s5"
-Phishing
-   ↓
-Social Engineering
-   ↓
-Credential Attack
-   ↓
-Malware Delivery
-   ↓
-Reconnaissance
-```
-
-Do not perform attacks against real systems without explicit authorization.
 
 ### Final Comparison
 
@@ -307,32 +218,6 @@ Do not perform attacks against real systems without explicit authorization.
 | Malware Delivery   | Deliver malicious software   | Devices                 | Security controls, safe browsing |
 | Reconnaissance     | Gather information           | Organizations / Systems | Minimize public exposure         |
 
-### Final Deliverable
 
-Create a GitHub project:
-
-```text id="t8p4w1"
-Common-Attack-Techniques/
-│
-├── README.md
-├── phishing.md
-├── social-engineering.md
-├── credential-attacks.md
-├── malware-delivery.md
-├── reconnaissance.md
-└── comparison.md
-```
-
-### Expected Result
-
-After completing this project, you should be able to:
-
-* Explain common attack techniques
-* Analyze real-world attack examples
-* Identify how attackers target people and systems
-* Understand common attack stages at a high level
-* Identify basic defensive measures
-* Perform safe, authorized reconnaissance
-* Document your research professionally
 
 > **Learn → Research → Analyze → Practice Safely → Document**
