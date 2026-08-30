@@ -49,48 +49,7 @@ OSINT is not simply collecting information. The information must be **analyzed a
 
 > **OSINT = Collect + Analyze public information to produce useful intelligence.**
 
-### Practical Task
 
-Choose a **public cybersecurity topic** and perform basic OSINT research.
-
-For example:
-
-> Research a publicly known cybersecurity threat.
-
-Collect information from at least **3 reliable public sources**.
-
-Record:
-
-* Source
-* Information found
-* Date
-* Relevance
-* URL
-
-### Deliverable
-
-Create an **OSINT Research Report**:
-
-```text id="4j8n2c"
-Research Topic:
-Research Question:
-
-Source 1:
-Information:
-
-Source 2:
-Information:
-
-Source 3:
-Information:
-
-Key Findings:
-Sources:
-```
-
-**Goal:**
-
-> Learn how to turn publicly available information into useful intelligence.
 
 ---
 
@@ -126,38 +85,7 @@ Analyze
 
 > **Public Information Gathering = Collecting information that is openly available.**
 
-### Practical Task
 
-Choose an organization that you **own or have explicit permission to research**.
-
-Collect only publicly available information.
-
-Research:
-
-* Main website
-* Public domains
-* Public subdomains
-* Technologies visible from public sources
-* Public documents
-* Public security information
-
-Do not attempt unauthorized access.
-
-### Deliverable
-
-Create a **Public Information Report**:
-
-| Information Type     | Finding | Source |
-| -------------------- | ------- | ------ |
-| Main Domain          |         |        |
-| Subdomains           |         |        |
-| Technologies         |         |        |
-| Public Documents     |         |        |
-| Security Information |         |        |
-
-**Goal:**
-
-> Learn how publicly available information can reveal useful details about an organization.
 
 ---
 
@@ -223,35 +151,6 @@ These techniques help researchers reduce irrelevant search results.
 
 > **Search Techniques = Use precise queries to find relevant information faster.**
 
-### Practical Task
-
-Choose a cybersecurity topic and perform searches using different techniques.
-
-Compare:
-
-1. Normal search
-2. Exact phrase search
-3. `site:` search
-4. `filetype:` search
-5. Exclusion using `-`
-
-Record what changes in the results.
-
-### Deliverable
-
-Create a table:
-
-| Search Technique | Search Query | Useful Result | What You Learned |
-| ---------------- | ------------ | ------------- | ---------------- |
-| Normal           |              |               |                  |
-| Exact Phrase     |              |               |                  |
-| site:            |              |               |                  |
-| filetype:        |              |               |                  |
-| Exclusion        |              |               |                  |
-
-**Goal:**
-
-> Learn how to search for cybersecurity information efficiently and precisely.
 
 ---
 
@@ -297,40 +196,7 @@ Threat researchers use sources such as:
 
 > **Threat Research = Understand a threat using reliable information and evidence.**
 
-### Practical Task
 
-Choose one publicly documented cybersecurity threat.
-
-Research:
-
-* Threat name
-* Threat type
-* Target
-* Attack techniques
-* Affected systems
-* Impact
-* Indicators or publicly documented evidence
-* Defensive measures
-* Reliable sources
-
-### Deliverable
-
-Create a **Threat Research Report**:
-
-```text id="e2c6k8"
-Threat:
-Threat Type:
-Target:
-Attack Techniques:
-Affected Systems:
-Impact:
-Defensive Measures:
-Sources:
-```
-
-**Goal:**
-
-> Learn how security researchers investigate and document cybersecurity threats.
 
 ---
 
@@ -384,119 +250,7 @@ Record the findings, evidence, sources, and conclusions.
 
 > **Investigation Workflow = Question → Collect → Verify → Analyze → Document.**
 
-### Practical Task
 
-Choose a **public cybersecurity investigation scenario**.
-
-Example:
-
-> Investigate a publicly reported cyber incident.
-
-Follow the complete workflow:
-
-```text id="n4x8v2"
-Research Question
-      ↓
-Public Sources
-      ↓
-Information Collection
-      ↓
-Source Verification
-      ↓
-Analysis
-      ↓
-Findings
-      ↓
-Final Report
-```
-
-Document every important source you used and explain how you verified your findings.
-
-### Deliverable
-
-Create an **OSINT Investigation Report**:
-
-```text id="q5m7c1"
-Investigation Question:
-
-Scope:
-
-Sources:
-
-Information Collected:
-
-Verified Findings:
-
-Analysis:
-
-Conclusion:
-
-Sources:
-```
-
-**Goal:**
-
-> Learn how to conduct a structured OSINT investigation instead of randomly collecting information.
 
 ---
-
-# Final Practical Project
-
-Complete a **Cybersecurity OSINT Investigation** using all five topics.
-
-Choose a safe research subject such as:
-
-* A publicly documented cyber incident
-* A known malware campaign
-* A publicly disclosed vulnerability
-* A cybersecurity threat
-
-Use only **publicly available information** and stay within an authorized scope.
-
-```text id="r8v3k6"
-Define Research Question
-          ↓
-Open-Source Intelligence
-          ↓
-Public Information Gathering
-          ↓
-Search Techniques
-          ↓
-Threat Research
-          ↓
-Verify Information
-          ↓
-Analyze Findings
-          ↓
-Investigation Report
-```
-
-### Final Deliverable
-
-Create a GitHub project:
-
-```text id="o1s5z9"
-OSINT-Fundamentals/
-│
-├── README.md
-├── open-source-intelligence.md
-├── public-information-gathering.md
-├── search-techniques.md
-├── threat-research.md
-├── investigation-workflow.md
-└── investigation-report.md
-```
-
-### Expected Result
-
-After completing this project, you should be able to:
-
-* Explain what OSINT is
-* Gather public information responsibly
-* Use effective search techniques
-* Research cybersecurity threats
-* Verify information using multiple sources
-* Follow a structured investigation workflow
-* Document OSINT findings professionally
-
-> **Question → Search → Collect → Verify → Analyze → Document**
+t → Verify → Analyze → Document**
