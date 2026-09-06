@@ -21,6 +21,11 @@
 - [17. Print Unique IP Addresses](#17-print-unique-ip-addresses)
 
 ---
+## NOTE
+> **Understand the code — do not just memorize it.**
+>
+> Try changing filenames, values, CSV columns, JSON keys, and log messages. Run the code and observe what changes. When you understand *why* each line is used, you can write similar programs confidently without memorizing every example.
+----
 
 ## 1. Reading Files
 
@@ -347,9 +352,3 @@ for ip in unique_ips:
 ```
 
 ---
-
-## Final Note
-
-> **Understand the code — do not just memorize it.**
->
-> Try changing filenames, values, CSV columns, JSON keys, and log messages. Run the code and observe what changes. When you understand *why* each line is used, you can write similar programs confidently without memorizing every example.
