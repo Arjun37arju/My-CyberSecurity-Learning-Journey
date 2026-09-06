@@ -1,4 +1,4 @@
-##File Handling, CSV, JSON and Log Files
+## File Handling, CSV, JSON and Log Files
 
 ## Navigation
 
@@ -21,10 +21,6 @@
 - [17. Print Unique IP Addresses](#17-print-unique-ip-addresses)
 
 ---
-
-Yes — here is your Task 5 in the same simple notes style, cleaned up and corrected for GitHub Markdown:
-
-# Task 5 — File Handling, CSV, JSON and Log Files
 
 ## 1. Reading Files
 
