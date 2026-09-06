@@ -1,5 +1,6 @@
 ## File Handling, CSV, JSON and Log Files
 
+
 ## Navigation
 
 - [1. Reading Files](#1-reading-files)
