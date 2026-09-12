@@ -127,6 +127,6 @@ Appropriate response
 
 ## Security Automation Flow
 
-![Security Automation Fundamentals](security-automation-fundamentals.png)
+![Security Automation Fundamentals](../assets/security-automation-fundamentals.png)
 
 > **Remember:** Automation reduces repetitive work and helps security teams detect and respond to threats faster. It supports humans rather than completely replacing them.
