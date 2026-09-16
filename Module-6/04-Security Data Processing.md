@@ -7,7 +7,7 @@
 3. [JSON Analysis](#3-json-analysis)
 4. [Event Categorization](#4-event-categorization)
 5. [Alert Generation](#5-alert-generation)
-6. [Combined Security Data Processing Program](#6-combined-security-data-processing-program)
+[Combined Security Data Processing Program](#combined-security-data-processing-program)
 
 ---
 
@@ -153,7 +153,7 @@ Alerts can help security systems identify events that require attention.
 
 ---
 
-## 6. Combined Security Data Processing Program
+## Combined Security Data Processing Program
 
 This program combines **Event Categorization** and **Alert Generation**.
 
