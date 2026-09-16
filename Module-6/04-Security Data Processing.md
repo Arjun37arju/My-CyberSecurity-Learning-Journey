@@ -7,6 +7,7 @@
 3. [JSON Analysis](#3-json-analysis)
 4. [Event Categorization](#4-event-categorization)
 5. [Alert Generation](#5-alert-generation)
+6. [Combined Security Data Processing Program](#6-combined-security-data-processing-program)
 
 ---
 
@@ -133,7 +134,7 @@ Categorization makes large amounts of security data easier to analyze.
 
 Alert generation means **automatically creating a warning when a security condition is detected**.
 
-Example:
+Simple example:
 
 ```python
 failed_logins = 5
@@ -148,29 +149,109 @@ Output:
 ALERT: Multiple failed login attempts detected!
 ```
 
-A basic security automation flow is:
+Alerts can help security systems identify events that require attention.
 
-```text
-Log Data
-    ↓
-Analyze
-    ↓
-Categorize Event
-    ↓
-Check Condition
-    ↓
-Generate Alert
+---
+
+## 6. Combined Security Data Processing Program
+
+This program combines **Event Categorization** and **Alert Generation**.
+
+```python
+def categorize_event(event):
+    if "Failed login" in event or "Successful login" in event:
+        return "Authentication"
+
+    elif "port scan" in event or "connection" in event:
+        return "Network"
+
+    elif "ERROR" in event or "crash" in event:
+        return "System"
+
+    elif "malware" in event or "virus" in event:
+        return "Threat"
+
+    else:
+        return "Other"
+
+
+def generate_alert(event, category):
+    if "Failed login" in event:
+        return "ALERT: Failed login detected"
+
+    if category == "Threat":
+        return "ALERT: Possible security threat detected"
+
+    if category == "System":
+        return "ALERT: System error detected"
+
+    return "No alert"
+
+
+logs = [
+    "Failed login from 192.168.1.10",
+    "Firewall detected port scan from 192.168.1.20",
+    "ERROR: Database connection failed",
+    "Antivirus detected malware in file.exe",
+    "User arjun logged in successfully"
+]
+
+
+for log in logs:
+    category = categorize_event(log)
+    alert = generate_alert(log, category)
+
+    print(f"Event    : {log}")
+    print(f"Category : {category}")
+    print(f"Alert    : {alert}")
+    print("-----------------------------")
 ```
 
-For example, if five failed login attempts are detected and the threshold is three, the system can generate an alert.
+### Program Flow
+
+```text
+Log
+ ↓
+Categorize Event
+ ↓
+Check Security Condition
+ ↓
+Generate Alert
+ ↓
+Display Result
+```
+
+### Example Output
+
+```text
+Event    : Failed login from 192.168.1.10
+Category : Authentication
+Alert    : ALERT: Failed login detected
+-----------------------------
+
+Event    : Firewall detected port scan from 192.168.1.20
+Category : Network
+Alert    : No alert
+-----------------------------
+
+Event    : ERROR: Database connection failed
+Category : System
+Alert    : ALERT: System error detected
+-----------------------------
+
+Event    : Antivirus detected malware in file.exe
+Category : Threat
+Alert    : ALERT: Possible security threat detected
+-----------------------------
+```
 
 ---
 
 ## Conclusion
 
-Security Data Processing helps security automation systems organize, analyze, categorize, and respond to security data.
+Security Data Processing helps security automation systems **organize, analyze, categorize, and respond to security data**.
 
-The basic process is:
+The overall process is:
 
 ```text
 Structured Data
@@ -182,4 +263,4 @@ Event Categorization
 Alert Generation
 ```
 
-This format will let you click the **Table of Contents** items in GitHub to jump directly to each topic.
+This provides a foundation for building automated security monitoring and analysis tools.
