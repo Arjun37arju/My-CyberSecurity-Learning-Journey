@@ -73,6 +73,7 @@ Browser                  Server
    | Encrypted Data        |
    |<=====================>|
 ```
+![TLS Handshake](../assets/tls-handshake.png)
 
 **TLS Handshake = process used to establish a secure connection.**
 
