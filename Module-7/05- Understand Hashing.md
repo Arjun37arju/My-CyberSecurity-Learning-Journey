@@ -1,30 +1,18 @@
-# Understand Hashing
+# Task 5 — Understand Hashing
 
 ## Content
 
 1. [Hash Functions](#1-hash-functions)
-2. [SHA-256](#2-sha-256)
-3. [SHA-384](#3-sha-384)
-4. [SHA-512](#4-sha-512)
-5. [SHA-3](#5-sha-3)
-6. [Data Integrity](#6-data-integrity)
-7. [Hash Verification](#7-hash-verification)
-8. [Hash Collision](#8-hash-collision)
-9. [Hash Collision Attack](#9-hash-collision-attack)
-10. [MD5 and SHA-1](#10-md5-and-sha-1)
-11. [Password Hashing](#11-password-hashing)
-12. [Password Salting](#12-password-salting)
-13. [Argon2](#13-argon2)
-14. [bcrypt](#14-bcrypt)
-15. [scrypt](#15-scrypt)
-16. [PBKDF2](#16-pbkdf2)
-17. [Password Hashing Comparison](#17-password-hashing-comparison)
-18. [Practical Work](#18-practical-work)
-19. [Conclusion](#19-conclusion)
+2. [Password Hashing](#2-password-hashing)
+3. [Data Integrity](#3-data-integrity)
+4. [Hash Verification](#4-hash-verification)
+5. [Collision Awareness](#5-collision-awareness)
 
 ---
 
 ## 1. Hash Functions
+
+### 1.1 What is a Hash Function?
 
 A **hash function** converts input data into a fixed-length hash value.
 
@@ -54,9 +42,7 @@ Important properties:
 
 Hashing is **not encryption** because there is normally no decryption process.
 
----
-
-## 2. SHA-256
+### 1.2 SHA-256
 
 **SHA-256** is a cryptographic hash function from the **SHA-2 family**.
 
@@ -69,31 +55,25 @@ Hashing is **not encryption** because there is normally no decryption process.
 Data → SHA-256 → 256-bit Hash
 ```
 
----
+### 1.3 SHA-384
 
-## 3. SHA-384
-
-**SHA-384** is another member of the SHA-2 family.
+**SHA-384** is a cryptographic hash function from the **SHA-2 family**.
 
 * Output size: **384 bits**
 * Hexadecimal representation: **96 characters**
 * One-way
-* Provides a longer hash than SHA-256
+* Longer output than SHA-256
 
----
+### 1.4 SHA-512
 
-## 4. SHA-512
-
-**SHA-512** is a SHA-2 cryptographic hash function.
+**SHA-512** is a cryptographic hash function from the **SHA-2 family**.
 
 * Output size: **512 bits**
 * Hexadecimal representation: **128 characters**
 * One-way
 * Longer output than SHA-256 and SHA-384
 
----
-
-## 5. SHA-3
+### 1.5 SHA-3
 
 **SHA-3** is a separate cryptographic hash family from SHA-2.
 
@@ -104,153 +84,28 @@ Common variants:
 * SHA3-384
 * SHA3-512
 
-Important:
-
 ```text
-SHA-2 → SHA-256, SHA-384, SHA-512
-SHA-3 → SHA3-224, SHA3-256, SHA3-384, SHA3-512
+SHA-2
+ ├── SHA-256
+ ├── SHA-384
+ └── SHA-512
+
+SHA-3
+ ├── SHA3-224
+ ├── SHA3-256
+ ├── SHA3-384
+ └── SHA3-512
 ```
 
 ---
 
-## 6. Data Integrity
+## 2. Password Hashing
 
-**Data integrity** means ensuring that data has not been changed or tampered with.
-
-Hashing can be used to detect changes.
-
-```text
-Original File
-     ↓
-Calculate Hash
-     ↓
-Known Hash
-```
-
-Later:
-
-```text
-Received File
-     ↓
-Calculate Hash
-     ↓
-Compare Hashes
-```
-
-If the hashes are different:
-
-```text
-Hash 1 ≠ Hash 2
-     ↓
-Data changed
-```
-
-If they match, the data passes the hash check, assuming the trusted hash itself has not been compromised.
-
----
-
-## 7. Hash Verification
-
-**Hash verification** means calculating a hash and comparing it with a known/trusted hash.
-
-```text
-File
- ↓
-Calculate Hash
- ↓
-Compare with Known Hash
-```
-
-### Same hash
-
-```text
-Hash A = Hash B
-→ Verification passes
-```
-
-### Different hash
-
-```text
-Hash A ≠ Hash B
-→ Verification fails
-```
-
-Hash verification is commonly used for checking file integrity.
-
----
-
-## 8. Hash Collision
-
-A **hash collision** occurs when two different inputs produce the same hash.
-
-```text
-Input A ≠ Input B
-
-Hash(Input A) = Hash(Input B)
-```
-
-Example:
-
-```text
-File A → Hash X
-File B → Hash X
-```
-
-Although the files are different, their hash values are the same.
-
-Because hash outputs have a fixed size, collisions must theoretically exist. Good cryptographic hash functions make finding useful collisions computationally difficult.
-
----
-
-## 9. Hash Collision Attack
-
-A **hash collision attack** attempts to deliberately find two different inputs that produce the same hash.
-
-### Goal
-
-```text
-Input A ≠ Input B
-       ↓
-Same Hash
-```
-
-If successful, an attacker may be able to bypass systems that incorrectly rely only on the hash value.
-
-Possible security impacts include:
-
-* File integrity verification
-* Digital signatures
-* Certificate security
-* Software verification
-
-Strong modern hash functions are designed to make practical collision attacks extremely difficult.
-
----
-
-## 10. MD5 and SHA-1
-
-**MD5** and **SHA-1** are older hash algorithms.
-
-Practical collision attacks have been demonstrated against both.
-
-Therefore, they should **not be relied upon for security applications where collision resistance is important**.
-
-Modern alternatives include:
-
-* SHA-256
-* SHA-384
-* SHA-512
-* SHA-3
-
-MD5 and SHA-1 can still appear in legacy or non-security contexts, but they should not be chosen for new collision-resistant security applications.
-
----
-
-## 11. Password Hashing
+### 2.1 What is Password Hashing?
 
 Passwords should **not** normally be stored as plaintext.
 
-### Bad approach
+Bad approach:
 
 ```text
 Password
@@ -258,9 +113,7 @@ Password
 Database
 ```
 
-Anyone who obtains the database could directly see the passwords.
-
-### Password hashing
+Password hashing:
 
 ```text
 Password
@@ -286,11 +139,27 @@ Compare with Stored Hash
 
 If the values match, authentication can succeed.
 
-A password hash is designed to be one-way. The application should not need to decrypt the stored password hash.
+A password hash is designed to be **one-way**. The application should not need to decrypt the stored password hash.
 
----
+### 2.2 Why Not Use SHA-256 Alone?
 
-## 12. Password Salting
+SHA-256 is designed to be fast.
+
+This is useful for many integrity applications, but it is not ideal for password storage because attackers can try many password guesses quickly.
+
+```text
+Password Guess
+      ↓
+SHA-256
+      ↓
+Hash
+```
+
+An attacker can repeat this process very quickly.
+
+Password-specific algorithms are designed to make password guessing more expensive.
+
+### 2.3 Password Salting
 
 A **salt** is a random value added to a password before hashing.
 
@@ -304,14 +173,14 @@ Password Hash
 
 The salt does not normally need to be secret and is stored with the password hash.
 
-### Without salt
+Without salt:
 
 ```text
 User A: password123 → Hash X
 User B: password123 → Hash X
 ```
 
-### With different salts
+With different salts:
 
 ```text
 User A:
@@ -325,11 +194,9 @@ Therefore:
 
 > **Same password + different salt → different hashes**
 
-Salting helps defend against precomputed hash tables and rainbow-table attacks.
+Salting helps protect against precomputed hash tables and rainbow-table attacks.
 
----
-
-## 13. Argon2
+### 2.4 Argon2
 
 **Argon2** is a modern password-hashing algorithm.
 
@@ -349,9 +216,7 @@ Password + Salt
 Password Hash
 ```
 
----
-
-## 14. bcrypt
+### 2.5 bcrypt
 
 **bcrypt** is a password-hashing algorithm designed to make password guessing slower and more expensive.
 
@@ -365,11 +230,7 @@ Password + Salt
 Password Hash
 ```
 
-The cost can be increased as computing power improves.
-
----
-
-## 15. scrypt
+### 2.6 scrypt
 
 **scrypt** is a password-hashing/key-derivation algorithm designed to require significant memory and computation.
 
@@ -383,9 +244,7 @@ Password Hash
 
 Its memory requirement makes large-scale password guessing more expensive.
 
----
-
-## 16. PBKDF2
+### 2.7 PBKDF2
 
 **PBKDF2** stands for:
 
@@ -407,11 +266,7 @@ Derived Key
 
 The repeated work makes password guessing slower.
 
-PBKDF2 is commonly used for password-based key derivation and password storage systems.
-
----
-
-## 17. Password Hashing Comparison
+### 2.8 Password Hashing Comparison
 
 | Algorithm  | Main characteristic            |
 | ---------- | ------------------------------ |
@@ -420,42 +275,241 @@ PBKDF2 is commonly used for password-based key derivation and password storage s
 | **scrypt** | Memory + computation intensive |
 | **PBKDF2** | Repeated iterations            |
 
-These are designed specifically for password hashing/key derivation rather than fast general-purpose hashing.
-
-### Why not SHA-256 alone?
-
-SHA-256 is designed to be fast.
-
-That is useful for many integrity applications, but it also means an attacker can test a very large number of password guesses quickly.
-
-Therefore:
-
-```text
-SHA-256 alone
-     ↓
-Too fast for password storage
-```
-
-Password-specific algorithms are designed to make guessing more expensive.
+These algorithms are designed specifically for password hashing or key derivation rather than fast general-purpose hashing.
 
 ---
 
-## 18. Practical Work
+## 3. Data Integrity
 
-The practical work for this task can be performed later in **Task 10**.
+### 3.1 What is Data Integrity?
 
-Tools and activities include:
+**Data integrity** means ensuring that data has not been changed or tampered with.
 
-### CyberChef
+Hashing can be used to detect changes.
 
-Use CyberChef to:
+```text
+Original File
+     ↓
+Calculate Hash
+     ↓
+Known Hash
+```
+
+Later:
+
+```text
+Received File
+     ↓
+Calculate Hash
+     ↓
+Compare Hashes
+```
+
+### 3.2 Detecting Changes
+
+If the hashes are different:
+
+```text
+Hash 1 ≠ Hash 2
+     ↓
+Data changed
+```
+
+If they match, the data passes the hash check, assuming the trusted hash itself has not been compromised.
+
+### 3.3 Example
+
+```text
+Original File
+     ↓
+SHA-256
+     ↓
+Hash A
+
+Received File
+     ↓
+SHA-256
+     ↓
+Hash B
+```
+
+If:
+
+```text
+Hash A = Hash B
+```
+
+The file passes the integrity check.
+
+If:
+
+```text
+Hash A ≠ Hash B
+```
+
+The file has changed or the data being checked is different.
+
+---
+
+## 4. Hash Verification
+
+### 4.1 What is Hash Verification?
+
+**Hash verification** means calculating a hash and comparing it with a known/trusted hash.
+
+```text
+File
+ ↓
+Calculate Hash
+ ↓
+Compare with Known Hash
+```
+
+### 4.2 Verification Process
+
+Same hash:
+
+```text
+Hash A = Hash B
+       ↓
+Verification Passed
+```
+
+Different hash:
+
+```text
+Hash A ≠ Hash B
+       ↓
+Verification Failed
+```
+
+### 4.3 Practical Example
+
+A software developer publishes:
+
+```text
+Expected SHA-256:
+ABC123...
+```
+
+You download the file and calculate its SHA-256 hash.
+
+```text
+Downloaded File
+      ↓
+SHA-256
+      ↓
+ABC123...
+```
+
+If both values match, the file passes the hash verification check.
+
+---
+
+## 5. Collision Awareness
+
+### 5.1 What is a Hash Collision?
+
+A **hash collision** occurs when two different inputs produce the same hash.
+
+```text
+Input A ≠ Input B
+
+Hash(Input A) = Hash(Input B)
+```
+
+Example:
+
+```text
+File A → Hash X
+File B → Hash X
+```
+
+Although the files are different, their hash values are the same.
+
+Because hash outputs have a fixed size, collisions must theoretically exist. Good cryptographic hash functions make finding useful collisions computationally difficult.
+
+### 5.2 Hash Collision Attack
+
+A **hash collision attack** attempts to deliberately find two different inputs that produce the same hash.
+
+```text
+Input A ≠ Input B
+       ↓
+    Same Hash
+```
+
+If successful, an attacker may be able to bypass systems that incorrectly rely only on the hash value.
+
+Possible security impacts include:
+
+* File integrity verification
+* Digital signatures
+* Certificate security
+* Software verification
+
+Strong modern hash functions are designed to make practical collision attacks extremely difficult.
+
+### 5.3 Collision Resistance
+
+**Collision resistance** means it should be computationally difficult to find two different inputs with the same hash.
+
+It does **not** mean collisions are mathematically impossible.
+
+```text
+Collision exists theoretically
+          ↓
+Finding a useful collision
+          ↓
+Should be computationally difficult
+```
+
+### 5.4 MD5
+
+**MD5** is an older hash algorithm.
+
+Practical collision attacks have been demonstrated against MD5.
+
+Therefore, MD5 should **not** be relied upon for security applications where collision resistance is important.
+
+It may still appear in some legacy or non-security contexts.
+
+### 5.5 SHA-1
+
+**SHA-1** is also an older hash algorithm.
+
+Practical collision attacks have been demonstrated against SHA-1.
+
+Therefore, SHA-1 should not be used for new security applications where collision resistance is required.
+
+### 5.6 Modern Hash Alternatives
+
+Modern cryptographic hash functions include:
+
+* SHA-256
+* SHA-384
+* SHA-512
+* SHA-3
+
+These are designed to provide stronger collision resistance than MD5 and SHA-1.
+
+---
+
+## 6. Practical Work
+
+The practical work for Task 5 can be performed later in **Task 10**.
+
+### 6.1 CyberChef
+
+CyberChef can be used to:
 
 * Generate hashes
-* Compare hashing algorithms
-* Observe changes when input changes
-* Explore encoding and cryptographic operations
+* Compare different hash algorithms
+* Observe how a small input change changes the hash
+* Explore cryptographic operations
+* Identify and process different types of encoded or hashed data
 
-### md5sum
+### 6.2 md5sum
 
 Linux can calculate an MD5 hash:
 
@@ -463,23 +517,23 @@ Linux can calculate an MD5 hash:
 md5sum file.txt
 ```
 
-### OpenSSL
+### 6.3 OpenSSL
 
 OpenSSL can be used to explore cryptographic operations and hashing.
 
-### Password Security Tools
+### 6.4 Password Security Tools
 
-Tools such as:
+Authorized lab environments can be used to understand password-hash security with tools such as:
 
 * CrackStation
 * John the Ripper
 * Hashcat
 
-can be used in authorized lab environments to understand password-hash security and password-guessing concepts.
+These tools should only be used on passwords/hashes you are authorized to test.
 
-### Practical objective
+### 6.5 Practical Objective
 
-The goal is to understand:
+The practical work demonstrates:
 
 ```text
 Input
@@ -495,7 +549,7 @@ Collision Awareness
 
 ---
 
-## 19. Conclusion
+## 7. Conclusion
 
 Hashing is a **one-way process** that converts data into a fixed-length value.
 
