@@ -384,3 +384,7 @@ Security Report
 ```
 
 > **Hands-on practice helps connect cryptography and communication-security concepts with real security tools and workflows.**
+>
+> ## Practical Reference
+
+[📘 Cryptography Practical Reference](../assets/Cryptography%20Practical%20Refrence.md)
