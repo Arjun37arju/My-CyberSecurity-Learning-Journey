@@ -387,4 +387,4 @@ Security Report
 >
 > ## Practical Reference
 
-[📘 Cryptography Practical Reference](../assets/Cryptography%20Practical%20Refrence.md)
+[📘 Cryptography Practical Reference](../assets/Cryptography%20Practical%20Reference.md)
