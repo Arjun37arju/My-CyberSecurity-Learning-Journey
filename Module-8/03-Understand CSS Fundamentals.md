@@ -4,7 +4,7 @@
 
  #  Topic                                               
 
- 1 . Styling Concepts](#1-styling-concepts)             
+ 1 . Styling Concepts](#1-styling-concepts).             
  2 . [Layout Systems](#2-layout-systems)                 
  3 . [Responsive Design](#3-responsive-design)           
  4 . [UI Components](#4-ui-components)                   
