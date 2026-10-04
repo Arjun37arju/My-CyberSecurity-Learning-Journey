@@ -4,12 +4,11 @@
 
  #  Topic                                               
 
- 1 . Styling Concepts](#1-styling-concepts).             
- 2 . [Layout Systems](#2-layout-systems)                 
- 3 . [Responsive Design](#3-responsive-design)           
- 4 . [UI Components](#4-ui-components)                   
- 5 . [User Experience Basics](#5-user-experience-basics) 
- 6 . [Summary](#summary)                                 
+ 1. [Styling Concepts](#1-styling-concepts)
+2. [Layout Systems](#2-layout-systems)
+3. [Responsive Design](#3-responsive-design)
+4. [UI Components](#4-ui-components)
+5. [User Experience Basics](#5-user-experience-basics)                             
 
 ---
 
@@ -487,6 +486,3 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 ```
 
-## CSS Fundamentals Completed ✅
-
-I have completed the fundamentals of CSS including **styling, layouts, responsive design, UI components, and basic UX principles**.
