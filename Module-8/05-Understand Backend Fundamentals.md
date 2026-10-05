@@ -7,7 +7,7 @@
 3. [Authentication Concepts](#3-authentication-concepts)
 4. [Session Management](#4-session-management)
 5. [Web Application Workflows](#5-web-application-workflows)
-6. [Summary](#summary)
+
 
 ---
 
