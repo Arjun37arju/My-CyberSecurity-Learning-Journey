@@ -318,4 +318,4 @@ iostat
 
 ### Linux Commands Reference
 
-👉 [Open Linux Fundamentals Commands Reference](../assets/Practical%20Commands%2C%20Usage%20%26%20Troubleshooting%20Workflows.md)
+👉 [Open Linux Fundamentals Commands Reference](../resources/Practical%20Commands%2C%20Usage%20%26%20Troubleshooting%20Workflows.md)
