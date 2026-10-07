@@ -409,14 +409,14 @@ By completing this project, you practiced five important hands-on activities:
 ```
 
 
-## References
-
-* [View User-Portal Project](../resources/User-Portal/)
-* [View Hands-on Tasks Report](../resources/hands-on-reports/Module-8.pdf)
-
-
 The purpose of this project is not to build a perfect production application.
 
 The purpose is to **build, test, observe, and identify security issues yourself.**
 
 Use this project as a starting point and try changing different parts of the application to understand how web applications and their security work.
+
+
+## References
+
+* [View User-Portal Project](../resources/User-Portal/)
+* [View Hands-on Tasks Report](../resources/hands-on-reports/Module-8.pdf)
