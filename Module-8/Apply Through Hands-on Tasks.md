@@ -419,4 +419,4 @@ Use this project as a starting point and try changing different parts of the app
 ## References
 
 * [View User-Portal Project](../resources/User-Portal/)
-* [View Hands-on Tasks Report](../resources/hands-on-report/Hands-on-Tasks-Report.pdf)
+* [View Hands-on Tasks Report](../resources/hands-on-report/Module-8.pdf)
