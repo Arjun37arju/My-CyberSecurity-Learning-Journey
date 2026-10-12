@@ -1,4 +1,3 @@
-
 def categorize_event(event):
     if "Failed login" in event or "Successful login" in event:
         return "Authentication"
