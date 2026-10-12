@@ -55,4 +55,4 @@ def service_ide(host, port):
         return "Unknown"
 
 
-port_scaner("brototype.com", 1, 100)
+port_scaner("example.com", 1, 100)
