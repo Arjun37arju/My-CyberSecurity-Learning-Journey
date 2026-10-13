@@ -1,4 +1,4 @@
-##Security Automation Fundamentals
+##  Why Automation Matters
 
 ## Table of Contents
 
