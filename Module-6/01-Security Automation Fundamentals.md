@@ -7,7 +7,7 @@
 * [3. Repetitive Task Reduction](#3-repetitive-task-reduction)
 * [4. Automation Opportunities](#4-automation-opportunities)
 * [5. SOC Automation Concepts](#5-soc-automation-concepts)
-* [Security Automation Flow](#security-automation-flow)
+
 
 ---
 
