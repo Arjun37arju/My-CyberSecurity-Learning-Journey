@@ -1,6 +1,7 @@
 # Cybersecurity Learning Journey
 
-This repository contains my learning notes, practical exercises, and task submissions completed during my Cybersecurity training program.
+# About This Repository
+This repository documents my cybersecurity learning journey at Brototype through structured notes, practical exercises, and hands-on learning.
 
 ## 📚 Course Modules
 
