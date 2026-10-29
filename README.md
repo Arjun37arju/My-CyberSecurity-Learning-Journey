@@ -1,59 +1,71 @@
-<div align="center">
+# Cybersecurity Learning Journey
 
-# 🛡️ Cyber Security Fundamentals
-
-<img src="./resources/sioux.png" alt="Cyber Security" width="100%">
-
-### 🔐 Learn → Understand → Practice → Analyze → Document
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Arjun%20R-blue?style=for-the-badge\&logo=linkedin)](https://www.linkedin.com/in/arjun37/)
-
-</div>
+This repository contains my cybersecurity learning notes, hands-on exercises, and module tasks completed during my cybersecurity training.
 
 ---
 
-## 📖 About This Repository
+## Modules
 
-This repository documents my **Cyber Security learning journey** as a Brototype student, covering foundational concepts, technical knowledge, security research, and hands-on security practice.
-
-Each module combines theoretical understanding with practical application.
-
-### 📚 What You'll Find Here
-
-* 📚 **Theory** — Core concepts and security fundamentals
-* 🔎 **Research** — Security research and analysis
-* 🧪 **Hands-on Tasks** — Practical exercises and labs
-* 📝 **Documentation** — Notes, reports, and findings
-* 💻 **Projects** — Practical work demonstrating learned concepts
-
----
-
-## 🔄 Learning Process
-
-```text
-Learn → Understand → Practice → Analyze → Document
-```
+| Module | Topic |
+|----------|-----------|
+| 01 | Foundation Week Cybersecurity |
+| 02 | Cyber Security Fundamentals |
+| 03 | Networking & Network Security |
+| 04 | Linux Administration & Shell Scripting |
+| 05 | Python Programming for Cyber Security |
+| 06 | Security Automation & Scripting |
+| 07 | Cryptography & Secure Communications |
+| 08 | Web Technologies & Secure Development Fundamentals |
+| 09 | Cloud Fundamentals & Security |
+| 10 | Identity, Access Management & Active Directory |
 
 ---
 
-## 🎯 Learning Objective
+## Module Navigation
 
-To develop a strong foundation in cybersecurity and progressively build **practical, analytical, and problem-solving skills** through continuous learning and hands-on experience.
+### Module 01
+- [Foundation Week Cybersecurity](./01-Foundation-Week-Cybersecurity)
+
+### Module 02
+- [Cyber Security Fundamentals](./02-Cyber-Security-Fundamentals)
+
+### Module 03
+- [Networking & Network Security](./03-Networking-Network-Security)
+
+### Module 04
+- [Linux Administration & Shell Scripting](./04-Linux-Administration-Shell-Scripting)
+
+### Module 05
+- [Python Programming for Cyber Security](./05-Python-Programming-for-Cyber-Security)
+
+### Module 06
+- [Security Automation & Scripting](./06-Security-Automation-Scripting)
+
+### Module 07
+- [Cryptography & Secure Communications](./07-Cryptography-Secure-Communications)
+
+### Module 08
+- [Web Technologies & Secure Development Fundamentals](./08-Web-Technologies-Secure-Development)
+
+### Module 09
+- [Cloud Fundamentals & Security](./09-Cloud-Fundamentals-Security)
+
+### Module 10
+- [Identity, Access Management & Active Directory](./10-Identity-Access-Management-Active-Directory)
 
 ---
 
-## 👨‍💻 Connect With Me
+## Skills Covered
 
-**Arjun R**
-
-🔗 **LinkedIn:** [linkedin.com/in/arjun37](https://www.linkedin.com/in/arjun37/)
+- Networking
+- Linux Administration
+- Python Programming
+- Security Automation
+- Cryptography
+- Web Security
+- Cloud Security
+- Identity & Access Management
+- Active Directory
+- Cyber Security Fundamentals
 
 ---
-
-<div align="center">
-
-### 🛡️ Cyber Security Learning Journey
-
-*Learning today. Securing tomorrow.*
-
-</div>
