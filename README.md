@@ -22,35 +22,24 @@ This repository documents my cybersecurity learning journey at Brototype through
 
 ## Module Navigation
 
-## Module Navigation
-
 ### Module 01
 - [Foundation Week Cybersecurity](./Module-01/)
-
 ### Module 02
 - [Cyber Security Fundamentals](./Module-02/)
-
 ### Module 03
 - [Networking & Network Security](./Module-03/)
-
 ### Module 04
 - [Linux Administration & Shell Scripting](./Module-04/)
-
 ### Module 05
 - [Python Programming for Cyber Security](./Module-05/)
-
 ### Module 06
 - [Security Automation & Scripting](./Module-06/)
-
 ### Module 07
 - [Cryptography & Secure Communications](./Module-07/)
-
 ### Module 08
 - [Web Technologies & Secure Development Fundamentals](./Module-08/)
-
 ### Module 09
 - [Cloud Fundamentals & Security](./Module-09/)
-
 ### Module 10
 - [Identity, Access Management & Active Directory](./Module-10/)
 ---
