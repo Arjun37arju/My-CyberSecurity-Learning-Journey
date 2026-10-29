@@ -68,8 +68,24 @@ This repository contains my learning notes, practical exercises, and task submis
 
 ---
 
-## Author
+## 👨‍💻 Author
 
-Arjun
-Diploma in Computer Science & Engineering
-Cybersecurity Enthusiast
+**Arjun**  
+🔐 Cybersecurity Student at Brototype  
+🎓 Diploma in Computer Science & Engineering
+
+I am passionate about exploring both **Offensive Security (Red Team)** and **Defensive Security (Blue Team)**. My goal is to understand how attacks happen, identify vulnerabilities, and learn how to detect, prevent, and respond to security threats.
+
+### 🎯 Areas of Interest
+- ⚔️ Offensive Security & Ethical Hacking
+- 🛡️ Defensive Security & SOC Operations
+- 🌐 Network & Web Application Security
+- 🐧 Linux Administration & Scripting
+- 🐍 Python for Cybersecurity
+- ☁️ Cloud Security
+- 🔑 Identity & Access Management (IAM)
+- 🔄 Security Automation & Incident Response
+
+### 🔗 Connect With Me
+🔗 **LinkedIn:** [linkedin.com/in/arjun37](https://www.linkedin.com/in/arjun37/)
+[- GitHub: [My GitHub Profile](https://github.com/Arjun37arju/)]
