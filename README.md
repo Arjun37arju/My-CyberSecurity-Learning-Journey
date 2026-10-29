@@ -23,35 +23,37 @@ This repository contains my cybersecurity learning notes, hands-on exercises, an
 
 ## Module Navigation
 
+## Module Navigation
+
 ### Module 01
-- [Foundation Week Cybersecurity](./01-Foundation-Week-Cybersecurity)
+[Foundation Week Cybersecurity](./01-Foundation-Week-Cybersecurity/)
 
 ### Module 02
-- [Cyber Security Fundamentals](./02-Cyber-Security-Fundamentals)
+[Cyber Security Fundamentals](./02-Cyber-Security-Fundamentals/)
 
 ### Module 03
-- [Networking & Network Security](./03-Networking-Network-Security)
+[Networking & Network Security](./03-Networking-Network-Security/)
 
 ### Module 04
-- [Linux Administration & Shell Scripting](./04-Linux-Administration-Shell-Scripting)
+[Linux Administration & Shell Scripting](./04-Linux-Administration-Shell-Scripting/)
 
 ### Module 05
-- [Python Programming for Cyber Security](./05-Python-Programming-for-Cyber-Security)
+[Python Programming for Cyber Security](./05-Python-Programming-for-Cyber-Security/)
 
 ### Module 06
-- [Security Automation & Scripting](./06-Security-Automation-Scripting)
+[Security Automation & Scripting](./06-Security-Automation-Scripting/)
 
 ### Module 07
-- [Cryptography & Secure Communications](./07-Cryptography-Secure-Communications)
+[Cryptography & Secure Communications](./07-Cryptography-Secure-Communications/)
 
 ### Module 08
-- [Web Technologies & Secure Development Fundamentals](./08-Web-Technologies-Secure-Development)
+[Web Technologies & Secure Development](./08-Web-Technologies-Secure-Development/)
 
 ### Module 09
-- [Cloud Fundamentals & Security](./09-Cloud-Fundamentals-Security)
+[Cloud Fundamentals & Security](./09-Cloud-Fundamentals-Security/)
 
 ### Module 10
-- [Identity, Access Management & Active Directory](./10-Identity-Access-Management-Active-Directory)
+[Identity, Access Management & Active Directory](./10-Identity-Access-Management-Active-Directory/)
 
 ---
 
