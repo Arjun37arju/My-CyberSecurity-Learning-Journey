@@ -88,4 +88,4 @@ I am passionate about exploring both **Offensive Security (Red Team)** and **Def
 
 ### 🔗 Connect With Me
 🔗 **LinkedIn:** [linkedin.com/in/arjun37](https://www.linkedin.com/in/arjun37/)
-[- GitHub: [My GitHub Profile](https://github.com/Arjun37arju/)]
+🔗 **Github:** [My GitHub Profile](https://github.com/Arjun37arju/)]
