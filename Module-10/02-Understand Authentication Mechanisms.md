@@ -6,8 +6,7 @@
 - [3. Single Sign-On (SSO) Concepts](#3-single-sign-on-sso-concepts)
 - [4. Identity Federation Awareness](#4-identity-federation-awareness)
 - [5. Modern Authentication Practices](#5-modern-authentication-practices)
-- [Quick Comparison](#quick-comparison)
-- [Key Takeaways](#key-takeaways)
+
 
 ---
 
