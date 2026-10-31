@@ -226,6 +226,10 @@ The incident is documented to improve future detection and response processes.
 
 ---
 
-# Summary
+---
 
-Identity Monitoring helps organizations detect unauthorized access, compromised accounts, and suspicious behavior. It relies on login events, authentication logs, access monitoring, and the identification of unusual activities. Security Operations Centers (SOCs) use structured investigation workflows to analyze alerts, contain threats, and maintain the security of organizational identities and resources.
+### 📚 Additional Resources
+
+For deeper understanding and advanced concepts, refer to the following resource:
+
+- [Active Directory – Security Architecture, Protocols & Advanced Concepts](../resources/Active%20Directory%20%E2%80%93%20Security%20Architecture%2C%20Protocols%20%26%20Advanced%20Concepts.md)
