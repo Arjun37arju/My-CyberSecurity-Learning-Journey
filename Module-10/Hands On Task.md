@@ -10,7 +10,6 @@
 * [4. Assess Identity Risks](#4-assess-identity-risks)
 * [5. Create IAM Security Reports](#5-create-iam-security-reports)
 * [Conclusion](#conclusion)
-* [References](#references)
 
 ---
 
