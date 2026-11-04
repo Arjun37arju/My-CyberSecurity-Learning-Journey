@@ -493,7 +493,7 @@ These activities help develop practical knowledge of identity security, authenti
 **The goal is to understand how identities are authenticated, how access is controlled, how suspicious activities are detected, and how identity-related security risks are reported.**
 
 ---
-* [View IAM Authentication Log Analysis Report](resources/hands-on-report/IAM_Authentication_Log_Analysis_Report.pdf)
+
 ## IAM Authentication Log Analysis Report
 
 📄 [Open IAM Authentication Log Analysis Report](../resources/hands-on-report/IAM_Authentication_Log_Analysis_Report_Updated.pdf)
