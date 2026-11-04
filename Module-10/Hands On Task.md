@@ -496,4 +496,4 @@ These activities help develop practical knowledge of identity security, authenti
 * [View IAM Authentication Log Analysis Report](resources/hands-on-report/IAM_Authentication_Log_Analysis_Report.pdf)
 ## IAM Authentication Log Analysis Report
 
-📄 [Open IAM Authentication Log Analysis Report](../resources/IAM_Authentication_Log_Analysis_Report_Updated.pdf)
+📄 [Open IAM Authentication Log Analysis Report](../resources/hands-on-report/IAM_Authentication_Log_Analysis_Report_Updated.pdf)
