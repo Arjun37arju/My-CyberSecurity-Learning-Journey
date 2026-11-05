@@ -42,6 +42,8 @@ This repository documents my cybersecurity learning journey at Brototype through
 - [Cloud Fundamentals & Security](./Module-09/)
 ### Module 10
 - [Identity, Access Management & Active Directory](./Module-10/)
+### Module 11
+- [Secure Software Development Lifecycle & DevSecOps](./Module-11/)
 ---
 
 ## Skills Covered
