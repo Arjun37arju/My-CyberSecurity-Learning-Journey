@@ -7,7 +7,7 @@ This repository documents my cybersecurity learning journey at Brototype through
 
 | Module | Topic |
 |----------|--------|
-| 01 | Foundation Week Cybersecurity |
+| 01 |[Foundation Week Cybersecurity](./Module-01/) |
 | 02 | Cyber Security Fundamentals |
 | 03 | Networking & Network Security |
 | 04 | Linux Administration & Shell Scripting |
