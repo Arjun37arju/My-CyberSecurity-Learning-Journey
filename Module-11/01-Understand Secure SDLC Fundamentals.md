@@ -2,11 +2,11 @@
 
 
 
-| 1 | [What is SDLC](#1-what-is-sdlc) |
-| 2 | [Secure SDLC Concepts](#2-secure-sdlc-concepts) |
-| 3 | [Security Throughout Development](#3-security-throughout-development) |
-| 4 | [Security Responsibilities](#4-security-responsibilities) |
-| 5 | [Risk Reduction Strategies](#5-risk-reduction-strategies) |
+1 . [What is SDLC](#1-what-is-sdlc) 
+2 . [Secure SDLC Concepts](#2-secure-sdlc-concepts) 
+3 . [Security Throughout Development](#3-security-throughout-development) 
+4 . [Security Responsibilities](#4-security-responsibilities) 
+5 . [Risk Reduction Strategies](#5-risk-reduction-strategies) 
 
 
 ---
