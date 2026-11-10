@@ -33,6 +33,7 @@ This repository documents my cybersecurity learning journey at Brototype through
 - Cloud Security
 - Identity and Access Management (IAM)
 - Active Directory
+- Secure Software Development Lifecycle & DevSecOps
 
 ---
 
