@@ -9,6 +9,7 @@
 - [4. Security Monitoring](#4-security-monitoring)
 - [5. Risk Mitigation](#5-risk-mitigation)
 - [Supply Chain Security Workflow](#supply-chain-security-workflow)
+- [Additional Resources](#Additional-Resources)
 
 
 ---
@@ -167,3 +168,10 @@ Apply Risk Mitigation
 Maintain Secure Software
 ```
 
+---
+
+### Additional Resources
+
+For more information about Secure SDLC, DevSecOps, and related security tools, refer to:
+
+[Secure Software Development Lifecycle & DevSecOps Tools](../resources/Secure%20Software%20Development%20Lifecycle%20%26%20DevSec%20Ops%20Tools.md)
