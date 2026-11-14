@@ -84,7 +84,7 @@ represent every API route in the application.
 
 ## 10. Application Route Overview
 
-The `routes/` directory contains route modules for different
+The `app/juice-shop/routes/` directory contains route modules for different
 application functionalities.
 
 Examples include:
@@ -124,3 +124,18 @@ descriptions in the examined JSON structure.
 
 A separate preliminary STRIDE analysis is documented in
 `task-1-threat-model.md`.
+
+## Source Code Evidence
+
+| Architecture component | Source file | Evidence |
+|---|---|---|
+| Frontend | `app/juice-shop/frontend/package.json` | Angular dependencies |
+| Backend | `app/juice-shop/package.json` | Node.js, Express and TypeScript dependencies |
+| Server setup | `app/juice-shop/server.ts` | Main backend server configuration |
+| Application startup | `app/juice-shop/app.ts` | Starts the application server |
+| Database | `app/juice-shop/models/index.ts` | Sequelize configured with SQLite |
+| API routes | `app/juice-shop/routes/` | Application API endpoints |
+| Real-time communication | `app/juice-shop/lib/startup/registerWebsocketEvents.ts` | Socket.IO event registration |
+| API specification | `app/juice-shop/swagger.yml` | B2B API documentation |
+
+These files were reviewed to understand the application's architecture. Their presence does not establish that the implemented security controls are effective.
