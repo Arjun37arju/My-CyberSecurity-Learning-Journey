@@ -8,3 +8,7 @@
 **/*.sqlite-journal
 **/uploads/
 **/logs/
+
+# Sensitive raw security scan output
+**/reports/gitleaks-report.json
+**/reports/trivy-results.json
