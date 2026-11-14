@@ -1,0 +1,122 @@
+name: DevSecOps Security Pipeline
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'Module-11/08-Apply Through Hands-on Tasks/**'
+      - '.github/workflows/security.yml'
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  security-scans:
+    name: Application Security Scans
+    runs-on: ubuntu-latest
+
+    env:
+      PROJECT_DIR: Module-11/08-Apply Through Hands-on Tasks/app/juice-shop
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Prepare reports directory
+        run: mkdir -p "$RUNNER_TEMP/security-reports"
+
+      - name: Dependency audit
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          npm audit --json > "$RUNNER_TEMP/security-reports/npm-audit.json" || true
+
+      - name: Semgrep SAST
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/src" \
+            -v "$RUNNER_TEMP/security-reports:/out" \
+            semgrep/semgrep:latest \
+            semgrep scan --config auto \
+            "/src/$PROJECT_DIR" \
+            --json --output /out/semgrep.json
+
+      - name: Trivy filesystem scan
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/src:ro" \
+            -v "$RUNNER_TEMP/security-reports:/out" \
+            aquasec/trivy:latest \
+            fs --scanners vuln,misconfig,secret \
+            --format json \
+            --output /out/trivy.json \
+            "/src/$PROJECT_DIR"
+
+      - name: Gitleaks secret scan
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/src:ro" \
+            -v "$RUNNER_TEMP/security-reports:/out" \
+            ghcr.io/gitleaks/gitleaks:latest \
+            dir "/src/$PROJECT_DIR" \
+            --redact \
+            --report-format json \
+            --report-path /out/gitleaks-redacted.json \
+            --exit-code 0
+
+      - name: Generate SBOM
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/src:ro" \
+            -v "$RUNNER_TEMP/security-reports:/out" \
+            anchore/syft:latest \
+            dir:"/src/$PROJECT_DIR" \
+            -o cyclonedx-json=/out/juice-shop-sbom.json
+
+      - name: Upload security reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: devsecops-security-reports
+          path: ${{ runner.temp }}/security-reports/
+          if-no-files-found: warn
+          retention-days: 14
+
+  openssf-scorecard:
+    name: OpenSSF Scorecard
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+      security-events: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Run OpenSSF Scorecard
+        uses: ossf/scorecard-action@v2.4.0
+        with:
+          results_file: scorecard-results.sarif
+          results_format: sarif
+          publish_results: true
+
+      - name: Upload Scorecard results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: openssf-scorecard-results
+          path: scorecard-results.sarif
+          if-no-files-found: warn
+          retention-days: 14
