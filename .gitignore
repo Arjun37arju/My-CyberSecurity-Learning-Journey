@@ -1,0 +1,10 @@
+# DevSecOps project generated files and secrets
+**/node_modules/
+**/coverage/
+**/dist/
+**/.env
+**/.env.*
+**/*.sqlite
+**/*.sqlite-journal
+**/uploads/
+**/logs/
